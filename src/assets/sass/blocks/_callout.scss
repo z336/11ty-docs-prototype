@@ -1,0 +1,24 @@
+.callout {
+  max-width: var(--measure);
+  padding: var(--space-xs-s);
+  border-radius: 0.5rem;
+  > * + * {
+    margin-top: var(--space-3xs-2xs);
+  }
+}
+.callout.note {
+  background-color: var(--color-note);
+  border-left: solid 0.5rem var(--color-note-secondary);
+}
+.callout.important {
+  background-color: var(--color-important);
+  border-left: solid 0.5rem var(--color-important-secondary);
+}
+.callout.warning {
+  background-color: var(--color-warning);
+  border-left: solid 0.5rem var(--color-warning-secondary);
+}
+.callout.new {
+  background-color: var(--color-new);
+  border-left: solid 0.5rem var(--color-new-secondary);
+}

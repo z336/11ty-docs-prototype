@@ -1,0 +1,107 @@
+// Set on parent to place it beneath the mobile menu when expanded
+.ontop {
+  z-index: 1;
+  position: relative;
+}
+
+.navbar {
+  // Always styles
+  ul {
+    list-style-type: none;
+    background: var(--color-light);
+    display: flex;
+    gap: var(--space-s-l);
+    a {
+      text-decoration: none;
+      @media (hover: hover) {
+        &:hover {
+          color: var(--color-light);
+          background-color: var(--color-dark);
+          padding: 0.5rem;
+          margin: -0.5rem;
+          text-decoration: none;
+        }
+      }
+    }
+    [aria-current="page"] {
+      color: var(--color-light);
+      background-color: var(--color-dark);
+      padding: 0.5rem;
+      margin: -0.5rem;
+      text-decoration: none;
+    }
+    [aria-current="page"]:focus {
+      outline: double var(--color-dark) 0.5rem;
+    }
+  }
+
+  // Set variables/desktop state
+  @media (min-width: 60rem) {
+    --nav-button-display: none;
+    --nav-position: static;
+    ul {
+      --nav-list-background: transparent;
+      --nav-list-layout: row;
+      --nav-list-position: static;
+      --nav-list-padding: 0;
+      --nav-list-height: auto;
+      --nav-list-width: 100%;
+      --nav-list-shadow: none;
+      --nav-list-transform: none;
+      --nav-list-visibility: visible;
+    }
+  }
+
+  // Mobile always
+  position: var(--nav-position, absolute);
+  // inset-block-start: 0.5rem;
+  inset-inline-end: 0.1rem;
+  ul {
+    box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
+    flex-direction: var(--nav-list-layout, column);
+    flex-wrap: wrap;
+    height: var(--nav-list-height, 100vh);
+    padding: var(--nav-list-padding, 2rem);
+    position: var(--nav-list-position, fixed);
+    inset-block-start: 0; /* Logical property. Equivalent to top: 0; */
+    inset-inline-end: 0; /* Logical property. Equivalent to right: 0; */
+    width: var(--nav-list-width, min(20rem, 100vw));
+    visibility: var(--nav-list-visibility, visible);
+  }
+
+  // Mobile but not expanded
+  [aria-expanded="false"] + ul {
+    transform: var(--nav-list-transform, translateX(100%));
+    visibility: var(--nav-list-visibility, hidden);
+  }
+  button {
+    all: unset;
+    display: var(--nav-button-display, flex);
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    padding-right: var(--space-s-m);
+  }
+  span {
+    font-size: var(--step-0);
+    padding-right: var(--space-2xs-xs);
+  }
+  svg {
+    height: 100%;
+    width: auto;
+  }
+
+  // Mobile and expanded
+  [aria-expanded="true"] svg {
+    transform: var(--nav-list-rotate, rotate(45deg));
+  }
+
+  // Animates ul only when opening to avoid flash on page load, svg always
+  @media (prefers-reduced-motion: no-preference) {
+    [aria-expanded="true"] + ul,
+    svg {
+      transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), visibility 0.05s linear;
+    }
+  }
+}

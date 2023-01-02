@@ -1,3 +1,0 @@
-tags: posts
-layout: page.html
-permalink: /posts/{{ page.fileSlug }}/index.html

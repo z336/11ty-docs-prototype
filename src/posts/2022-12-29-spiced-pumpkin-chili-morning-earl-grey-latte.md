@@ -18,7 +18,12 @@ Bolivian rainbow pepper.
 
 {% callout 'callout | important', 'Important' %}
 Bolivian rainbow pepper.
-{% endcallout %}
+
+- blood
+- orange
+- arugula
+- salad
+  {% endcallout %}
 
 {% callout 'callout | warning', 'Warning' %}
 Bolivian rainbow pepper.
@@ -26,7 +31,12 @@ Bolivian rainbow pepper.
 
 {% callout 'callout | new', 'New' %}
 Bolivian rainbow pepper.
-{% endcallout %}
+
+1. blood
+2. orange
+3. arugula
+4. salad
+   {% endcallout %}
 
 ## Spiced Pumpkin Chili Morning Earl Grey Latte
 

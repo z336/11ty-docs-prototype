@@ -15,6 +15,11 @@ footer {
   padding-inline: var(--gutter);
 }
 
+footer {
+  text-align: center;
+  margin-inline: 18rem;
+}
+
 h1 {
   font-size: var(--step-3);
 }
@@ -39,6 +44,11 @@ h6 {
   font-size: var(--step--2);
 }
 
+h2,
+h3 {
+  scroll-margin-top: var(--space-2xl-3xl);
+}
+
 strong {
   font-family: AuthenticBold;
 }
@@ -50,6 +60,10 @@ a {
 
 a:is(:hover, :focus) {
   text-underline-offset: 0.35rem;
+}
+
+summary {
+  cursor: pointer;
 }
 
 .heading-anchor:is(:hover, :focus):after {
@@ -65,4 +79,51 @@ a:is(:hover, :focus) {
   overflow: hidden;
   white-space: nowrap;
   text-indent: 1em; /* the width of the icon */
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 18rem;
+  padding-inline: var(--gutter);
+  margin-top: var(--space-l-xl);
+  background-color: var(--color-light);
+  h2 {
+    display: inline-block;
+    font-size: var(--step-0);
+    font-weight: bold;
+  }
+}
+
+.content {
+  @media (min-width: 60rem) {
+    margin-inline-start: 18rem;
+  }
+  @media (min-width: 80rem) {
+    margin-inline-end: 18rem;
+  }
+}
+
+.table-of-contents {
+  @media (min-width: 80rem) {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 18rem;
+    padding-inline: var(--gutter);
+    padding-block: var(--space-xs-s);
+    margin-top: var(--space-l-xl);
+    background-color: var(--color-light);
+    h2 {
+      display: inline-block;
+      font-size: var(--step-0);
+      font-weight: bold;
+    }
+    ol {
+      margin-top: 0;
+    }
+  }
 }

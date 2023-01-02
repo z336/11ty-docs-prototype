@@ -1,0 +1,3 @@
+tags: reference
+layout: page.html
+permalink: /reference/{{ page.fileSlug }}/index.html

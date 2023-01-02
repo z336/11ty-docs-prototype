@@ -2,7 +2,9 @@ const { load } = require("js-yaml");
 const { readableDate, htmlDateString, getFullYear } = require("./config/filters/index.js");
 const markdown = require("./config/plugins/index.js");
 const image = require("./src/includes/components/image");
-
+const callout = require("./src/includes/components/callout");
+const details = require("./src/includes/components/details");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/sass/");
 
@@ -21,14 +23,11 @@ module.exports = function (eleventyConfig) {
 
   // Plugins
   eleventyConfig.setLibrary("md", markdown);
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.addPairedShortcode("callout", function (content, calloutClass, calloutType) {
-    return `<aside class="${calloutClass}">
-      <p><strong>${calloutType}</strong></p>
-      <p>${content}</p>
-    </aside>`;
-  });
-
+  // Shortcodes ("components")
+  eleventyConfig.addPairedShortcode("callout", callout);
+  eleventyConfig.addPairedShortcode("details", details);
   eleventyConfig.addLiquidShortcode("image", image);
 
   return {

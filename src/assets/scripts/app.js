@@ -1,7 +1,8 @@
-// Append the table of contents heading to avoid mapping it to its own list
-// const getNavNode = document.querySelector(".table-of-contents");
+//Append the table of contents heading to avoid mapping it to its own list
+// Todo: cleanup to check for the class onload so it's not attempting to add html to every page
+const getNavNode = document.querySelector(".table-of-contents");
 
-// getNavNode.insertAdjacentHTML("afterbegin", "<h2>Table of Contents</h2>");
+getNavNode.insertAdjacentHTML("afterbegin", "<h2>On this page</h2>");
 
 // Mobile nav menu
 

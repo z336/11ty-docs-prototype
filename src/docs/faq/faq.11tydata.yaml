@@ -1,0 +1,3 @@
+tags: faq
+layout: page.html
+permalink: /faq/{{ page.fileSlug }}/index.html

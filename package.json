@@ -31,5 +31,8 @@
   "browserslist": [
     "> 0.25%",
     "not IE 11"
-  ]
+  ],
+  "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.3.5"
+  }
 }

@@ -1,8 +1,10 @@
 //Append the table of contents heading to avoid mapping it to its own list
-// Todo: cleanup to check for the class onload so it's not attempting to add html to every page
-const getNavNode = document.querySelector(".table-of-contents");
 
-getNavNode.insertAdjacentHTML("afterbegin", "<h2>On this page</h2>");
+const toc = document.querySelector(".table-of-contents");
+
+if (document.body.contains(toc)) {
+  toc.insertAdjacentHTML("afterbegin", "<h2>On this page</h2>");
+}
 
 // Mobile nav menu
 
@@ -12,7 +14,7 @@ const burgerClone = document.querySelector("#burger-template").content.cloneNode
 const svg = nav.querySelector("svg");
 
 const button = burgerClone.querySelector("button");
-button.addEventListener("click", (e) => {
+button.addEventListener("click", (event) => {
   const isOpen = button.getAttribute("aria-expanded") === "false";
   button.setAttribute("aria-expanded", isOpen);
 });
@@ -24,15 +26,15 @@ const disableMenu = () => {
 };
 
 //  close on escape
-nav.addEventListener("keyup", (e) => {
-  if (e.code === "Escape") {
+nav.addEventListener("keyup", (event) => {
+  if (event.code === "Escape") {
     disableMenu();
   }
 });
 
 // close if clicked outside of event target
-document.addEventListener("click", (e) => {
-  const isClickInsideElement = nav.contains(e.target);
+document.addEventListener("click", (event) => {
+  const isClickInsideElement = nav.contains(event.target);
   if (!isClickInsideElement) {
     disableMenu();
   }

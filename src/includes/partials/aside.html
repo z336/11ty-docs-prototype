@@ -1,0 +1,43 @@
+{% assign currentPage = page.url %}
+
+<aside class="region | menu">
+  <nav>
+    <details open="">
+      <summary><h2>Tutorial</h2></summary>
+      <ul>
+        {% for item in navigation.docs.tutorial %}
+        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+    <details open="">
+      <summary><h2>How-to</h2></summary>
+      <ul>
+        {% for item in navigation.docs.howTo %}
+        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+    <details open="">
+      <summary><h2>Reference</h2></summary>
+      <ul>
+        {% for item in navigation.docs.reference %}
+        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+    <details open="">
+      <summary><h2>Explanation</h2></summary>
+      <ul>
+        {% for item in navigation.docs.explanation %}
+        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+    <ul>
+      {% for item in navigation.docs.faq %}
+      <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</aside>

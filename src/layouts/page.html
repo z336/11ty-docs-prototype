@@ -2,45 +2,7 @@
 layout: base.html
 ---
 
-<aside class="region | menu">
-  <details open="">
-    <summary><h2>Tutorial</h2></summary>
-    <ul>
-      {% for item in navigation.docs.tutorial %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </details>
-  <details open="">
-    <summary><h2>How-to</h2></summary>
-    <ul>
-      {% for item in navigation.docs.howTo %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </details>
-  <details open="">
-    <summary><h2>Reference</h2></summary>
-    <ul>
-      {% for item in navigation.docs.reference %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </details>
-  <details open="">
-    <summary><h2>Explanation</h2></summary>
-    <ul>
-      {% for item in navigation.docs.explanation %}
-      <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </details>
-  <ul>
-    {% for item in navigation.docs.faq %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
-</aside>
+{% include 'partials/aside.html' %}
 <article id="article" class="region | content">
   <header class="wrapper | page-header">
     <h1>{{ title }}</h1>

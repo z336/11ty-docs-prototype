@@ -7,5 +7,9 @@ layout: base.html
   <header class="wrapper | page-header">
     <h1>{{ title }}</h1>
   </header>
-  <article class="wrapper | flow | prose">{{ content }}</article>
+  <article class="wrapper | flow | prose">
+    {% if overview %}
+    <p>{{ overview }}</p>
+    {% endif %}{{ content }}
+  </article>
 </article>

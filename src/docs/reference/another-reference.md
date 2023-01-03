@@ -1,46 +1,34 @@
 ---
-title: Another Reference
-description: This is an article that contains references.
-eleventyNavigation:
-  key: Another Reference
-  parent: Reference
-  order: 2
+title: Anothr Reference
+overview: This is the overview section. It only displays if there is an overview for the article. Kung pao pepper paprika banana bread Bolivian rainbow pepper peanut butter matcha cool Bulgarian carrot mediterranean luxury bowl.
 ---
-
-Bolivian rainbow pepper Vegan Ipsum Me lemon tahini dressing salty second course picnic salad Thai basil curry chickpea crust pizza tahini drizzle pineapple salsa eating together fiery fruit samosa garlic sriracha noodles hearts of palm miso dressing lingonberry ginger tofu peaches grains broccoli.
 
 [toc]
 
-## Peanut Butter Crunch Banana Bread
+## Refreshing Cucumber
 
-Bolivian rainbow pepper Vegan Ipsum Me lemon tahini dressing salty second course picnic salad Thai basil curry chickpea crust pizza tahini drizzle pineapple salsa eating together fiery fruit samosa garlic sriracha noodles hearts of palm miso dressing lingonberry ginger tofu peaches grains broccoli. Italian pepperoncini crunchy seaweed kung pao pepper black bean wraps alfalfa sprouts main course Vegan Ipsum Me pumpkin tabasco pepper ghost pepper raspberries green tea peanut butter muffins chai tea figs artichoke hearts Thai cilantro lime vinaigrette leek peppermint Caribbean red habanero delightful blueberry scones morning smoothie bowl spicy. Appetizer bananas orange pesto springtime strawberry vine tomatoes green grapes Vegan Ipsum Me peach strawberry mango vegan sandwiches dark and stormy Sicilian pistachio pesto fall double dark chocolate dill veggie burgers cherries.
+Chili pepper simmer grapefruit jalapeño Thai basil curry hummus hot soba noodles thyme lemonade zest heat soy milk rich coconut cream basmati. Pine nuts red pepper chia seeds cilantro lime vinaigrette red grapes apricot cayenne dill green tea lime Thai super chili sriracha pecans blueberries coriander banh mi salad rolls hazelnut shiitake mediterranean vegetables cherry bomb mint salty blueberry pops delightful blueberry scones green grapes cashew mediterranean bento box parsley. Peanut butter crunch guacamole pinch of yum açai almonds peach strawberry mango seeds springtime strawberry blackberries almond milk chai latte with salad mushroom risotto creamy cauliflower alfredo cherry bomb pepper overflowing berries samosa kale roasted butternut squash cranberry spritzer chilies creamiest miso dressing ultimate chocolate peanut butter dip.
 
-{% image "./src/assets/images/figma-chart.png", "alt text", "This is a caption of an image." %}
+## Smoky Maple Tempeh Glaze
 
-Bolivian rainbow pepper Vegan Ipsum Me lemon tahini dressing salty second course picnic salad Thai basil curry chickpea crust pizza tahini drizzle pineapple salsa eating together fiery fruit samosa garlic sriracha noodles hearts of palm miso dressing lingonberry ginger tofu peaches grains broccoli. Italian pepperoncini crunchy seaweed kung pao pepper black bean wraps alfalfa sprouts main course Vegan Ipsum Me pumpkin tabasco pepper ghost pepper raspberries green tea peanut butter muffins chai tea figs artichoke hearts Thai cilantro lime vinaigrette leek peppermint Caribbean red habanero delightful blueberry scones morning smoothie bowl spicy. Appetizer bananas orange pesto springtime strawberry vine tomatoes green grapes Vegan Ipsum Me peach strawberry mango vegan sandwiches dark and stormy Sicilian pistachio pesto fall double dark chocolate dill veggie burgers cherries.
+Cremini mushrooms kung pao pepper paprika banana bread Bolivian rainbow pepper peanut butter matcha cool Bulgarian carrot mediterranean luxury bowl shiitake mushrooms. Cocoa pesto plums cherry zesty tofu pad thai crunchy morning smoothie bowl spicy dark chocolate summer fruit salad red curry tofu noodles bruschetta smoked tofu earl grey latte frosted gingerbread bites.
 
-{% callout 'callout | note', 'Note' %}
-Bolivian rainbow pepper.
-{% endcallout %}
+## Mediterranean Hummus
 
-{% callout 'callout | important', 'Important' %}
-Bolivian rainbow pepper.
+Hemp seeds balsamic vinaigrette summertime coconut rice couscous fiery fruit peppermint candy cane winter sweet potato green pepper tempeh crumbled lentils peaches cauliflower lemon lime minty habanero golden roasted peanuts Southern Italian. Avocado dressing drizzle green papaya salad sesame soba noodles chocolate cookie Thai sun pepper cozy cinnamon oatmeal ultra creamy avocado pesto ginger carrot spiced juice banana bread potato sandwiches lemon tahini dressing tomato and basil vine tomatoes cumin shallots spiced peppermint blast macadamia nut cookies green bowl lentils fall comforting pumpkin spice latte blueberry chia seed jam sweet potato.
 
-- blood
-- orange
-- arugula
-- salad
-  {% endcallout %}
+## Lavender Lemonade Chocolate Cookie
 
-{% callout 'callout | warning', 'Warning' %}
-Bolivian rainbow pepper.
-{% endcallout %}
+Bananas toasted hazelnuts Thai curry apple vinaigrette scotch bonnet pepper hearts of palm udon noodles butternut mix roasted brussel sprouts black beans lime mango crisp naga viper basil cookies creamy cauliflower alfredo sauce. Portobello mushrooms walnut mushroom tart chili mangos miso turmeric glazed aubergine sleepy morning tea Italian linguine puttanesca spring fig arugula cashew salad Indian spiced muffins main course kimchi chickpea crust pizza crispy green onions refreshing cucumber splash Mexican fiesta shaved almonds coconut lemongrass burritos cozy butternut vegan.
 
-{% callout 'callout | new', 'New' %}
-Bolivian rainbow pepper.
+## Pine Nuts Ghost Pepper Kimchi
 
-1. blood
-2. orange
-3. arugula
-4. salad
-   {% endcallout %}
+Strawberries cool off black bean chili dip spiced pumpkin chili sparkling pomegranate punch Italian pepperoncini salted lavender lemonade enchiladas smoky maple tempeh glaze street style Thai basil tacos Caribbean red habanero seitan pumpkin asian pear avocado black bean wraps tofu ginger tofu dragon fruit walnut pesto tart casserole. Ginger lemongrass agave green tea lychee winter crispy iceberg lettuce lemon citrusy arugula salad tasty instant pot red lentil curry sweet potato black bean burrito.
+
+## Red Curry Tofu Noodles
+
+Blood orange smash grenadillo crunchy seaweed overflowing mint lime taco salsa dark and stormy seasonal hummus falafel bowl lemon red lentil soup Thai dragon pepper raspberry fizz eating together raspberries entree picnic salad apples pineapple salsa double dark chocolate. Cinnamon toast orange strawberry mango smoothie summer maple orange tempeh Chinese five-spice powder banana chai tea dessert figs cherries.
+
+## Dark Chocolate Chili Pepper
+
+Four-layer cinnamon coconut sugar tabasco pepper grains garlic sriracha noodles ghost pepper Sicilian pistachio pesto pomegranate lingonberry Malaysian cilantro a delicious meal edamame second course broccoli quinoa flatbread chocolate avocado basil pesto golden cayenne pepper kale caesar salad falafel bites leek fresh coconut milk veggie burgers. Strawberry spinach salad edamame hummus picnic farro platter appetizer one bowl mocha chocolate soup pasta tahini drizzle bite sized Thai homemade balsamic lime hearty.

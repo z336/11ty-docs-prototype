@@ -1,16 +1,15 @@
 <a href="#article" class="skip-link">{{ metadata.skipContent }}</a>
 
 <header class="region | site-header">
-  <div class="sidebar | ontop">
+  <nav role="primary">
     <a href="/" tabindex="-1" style="text-decoration: none">{{ metadata.title }}</a>
     {% if breadcrumbs %}
-    <ul class="breadcrumb">
-      {% for item in breadcrumbs %}
-      <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</li>
-      {% endfor %}
-      <li>{{ title }}</li>
-    </ul>
+      <ul class="breadcrumb">
+        {% for item in breadcrumbs %}
+        <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</li>
+        {% endfor %}
+        <li>{{ title }}</li>
+      </ul>
     {% endif %} 
-    {% include 'partials/menu.html' %}
-  </div>
+  </nav>
 </header>

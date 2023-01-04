@@ -144,7 +144,6 @@ summary {
     }
     ol {
       margin-top: 0;
-      padding-block: var(--space-3xs-2xs);
     }
   }
 }
@@ -157,7 +156,6 @@ details {
   }
   ul {
     list-style: none;
-    padding-block: var(--space-3xs-2xs);
   }
   summary::-webkit-details-marker {
     display: none;

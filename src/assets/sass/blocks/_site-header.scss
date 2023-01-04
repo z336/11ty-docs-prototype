@@ -6,4 +6,10 @@
   right: 0;
   top: 0;
   background-color: var(--color-light);
+  nav {
+    display: flex;
+    ul {
+      margin-inline-start: 7rem;
+    }
+  }
 }

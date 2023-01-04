@@ -1,6 +1,10 @@
 ---
 title: FAQ
 description: This is an article with a bunch of FAQs.
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: FAQ
 ---
 
 {% details "callout | details", "Why is x happening to z?" %}

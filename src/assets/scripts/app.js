@@ -9,7 +9,10 @@ if (document.body.contains(toc)) {
 // Toggle details element in left navbar to stay open for current page
 
 const currentPage = document.querySelector(`details a[aria-current="page"]`);
-currentPage.closest("details").setAttribute("open", "");
+
+if (currentPage) {
+  currentPage.closest("details").setAttribute("open", "");
+}
 
 // Mobile nav menu
 

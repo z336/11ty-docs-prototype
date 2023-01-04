@@ -1,0 +1,9 @@
+.breadcrumb {
+  list-style-type: none;
+  display: flex;
+  gap: var(--space-xs-s);
+  li + li:before {
+    padding-inline-end: var(--space-xs-s);
+    content: "/\00a0";
+  }
+}

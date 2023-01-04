@@ -63,23 +63,23 @@ a:is(:hover, :focus) {
   text-underline-offset: 0.35rem;
 }
 
-summary {
-  cursor: pointer;
-}
-
-.heading-anchor:is(:hover, :focus):after {
+a:not([href*="11ty-docs-prototype.com/"]):not([href^="#"]):not([href^="/"]):after {
   display: inline-block;
   width: 1em;
   height: 1em;
-  background-image: url("/assets/images/hash.svg");
+  background-image: url("/assets/images/external-link.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60% auto;
   /* alternative text rules */
-  content: "(heading anchor link)";
+  content: "(external link)";
   overflow: hidden;
   white-space: nowrap;
   text-indent: 1em; /* the width of the icon */
+}
+
+summary {
+  cursor: pointer;
 }
 
 .menu {
@@ -144,6 +144,42 @@ summary {
     }
     ol {
       margin-top: 0;
+      padding-block: var(--space-3xs-2xs);
     }
+  }
+}
+
+// Todo: switch to postcss + autoprefixer because Safari is trash
+
+details {
+  summary {
+    list-style: none;
+  }
+  ul {
+    list-style: none;
+    padding-block: var(--space-3xs-2xs);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::before {
+    display: inline-block;
+    width: 1.65em;
+    height: 1em;
+    background-image: url("/assets/images/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60% auto;
+    // alternative text rules
+    content: "(details list marker)";
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 1.65em; // the width of the icon
+  }
+}
+
+details[open] {
+  summary::before {
+    background-image: url("/assets/images/minus.svg");
   }
 }

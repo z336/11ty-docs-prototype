@@ -4,6 +4,7 @@ const markdown = require("./config/plugins/index.js");
 const image = require("./src/includes/components/image");
 const callout = require("./src/includes/components/callout");
 const details = require("./src/includes/components/details");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/sass/");
@@ -23,6 +24,7 @@ module.exports = function (eleventyConfig) {
 
   // Plugins
   eleventyConfig.setLibrary("md", markdown);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // Shortcodes ("components")
   eleventyConfig.addPairedShortcode("callout", callout);

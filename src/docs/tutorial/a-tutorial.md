@@ -1,6 +1,10 @@
 ---
 title: A Tutorial
 overview: This is the overview section. It only displays if there is an overview for the article. Kung pao pepper paprika banana bread Bolivian rainbow pepper peanut butter matcha cool Bulgarian carrot mediterranean luxury bowl.
+breadcrumbs:
+  - title: Home
+    url: /
+  - title: Tutorial
 ---
 
 [toc]
@@ -31,7 +35,7 @@ Bolivian rainbow pepper Vegan Ipsum Me lemon tahini dressing salty second course
 - list
   {% enddetails %}
 
-Italian pepperoncini crunchy seaweed kung pao pepper black bean wraps alfalfa sprouts main course Vegan Ipsum Me pumpkin tabasco pepper ghost pepper raspberries green tea peanut butter muffins chai tea figs artichoke hearts Thai cilantro lime vinaigrette leek peppermint Caribbean red habanero delightful blueberry scones morning smoothie bowl spicy. Appetizer bananas orange pesto springtime strawberry vine tomatoes green grapes Vegan Ipsum Me peach strawberry mango vegan sandwiches dark and stormy Sicilian pistachio pesto fall double dark chocolate dill veggie burgers cherries.
+Italian pepperoncini [crunchy seaweed](https://duckduckgo.com/) kung pao pepper black bean wraps alfalfa sprouts main course Vegan Ipsum Me pumpkin tabasco pepper ghost pepper raspberries green tea peanut butter muffins chai tea figs artichoke hearts Thai cilantro lime vinaigrette leek peppermint Caribbean red habanero delightful blueberry scones morning smoothie bowl spicy. Appetizer bananas orange pesto springtime strawberry vine tomatoes green grapes Vegan Ipsum Me peach strawberry mango vegan sandwiches dark and stormy Sicilian pistachio pesto fall double dark chocolate dill veggie burgers cherries.
 
 {% callout 'callout | note', 'Note' %}
 Bolivian rainbow pepper.
@@ -58,3 +62,11 @@ Bolivian rainbow pepper.
 3. arugula
 4. salad
    {% endcallout %}
+
+```js
+const currentPage = document.querySelector(`details a[aria-current="page"]`);
+
+if (currentPage) {
+  currentPage.closest("details").setAttribute("open", "");
+}
+```

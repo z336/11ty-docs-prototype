@@ -1,5 +1,5 @@
 :root {
-  --color-dark: #070a10;
+  --color-dark: #000;
   --color-light: #f3f3ed;
 
   --color-new: #8aff80;
@@ -16,6 +16,7 @@
   --font-base-bold: AuthenticBold, Helvetica, Arial, sans-serif;
   --font-mono: monospace;
 
+  --border-radius: 0.25rem;
   --measure: 60ch;
   --gutter: var(--space-s-m);
 

@@ -17,10 +17,6 @@
     />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
     <link
-      href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
-      rel="stylesheet"
-    />
-    <link
       rel="preload"
       href="{{ '/assets/fonts/AUTHENTICSans-90.woff' | url }}"
       as="font"
@@ -36,7 +32,7 @@
     />
     <script type="module" src="{{ '/assets/scripts/app.js' }}" defer></script>
   </head>
-  <body>
+  <body id="top">
     {% include 'partials/header.html' %}
     <main>{{ content }}</main>
     {% include 'partials/footer.html' %}

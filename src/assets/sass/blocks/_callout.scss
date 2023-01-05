@@ -1,6 +1,6 @@
 .callout {
   padding: var(--space-xs-s);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   > * + * {
     margin-top: var(--space-3xs-2xs);
   }

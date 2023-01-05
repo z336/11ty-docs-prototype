@@ -21,6 +21,6 @@ layout: base.html
   <article class="wrapper | flow | prose">
     {% if overview %}
     <p>{{ overview }}</p>
-    {% endif %} {{ content }}
+    {% endif %} {{ content }} {% include 'partials/help.html' %}
   </article>
 </article>

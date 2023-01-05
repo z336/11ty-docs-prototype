@@ -1,10 +1,11 @@
 .prose {
-  --flow-space: var(--space-xl-2xl);
+  --flow-space: var(--space-l-xl);
   --wrapper-max-width: 60rem;
   padding-inline: var(--gutter);
 }
 
-.prose :is(h2, h3, h4) + * {
+.prose :is(h2, h3, h4) + *,
+p + p {
   --flow-space: var(--space-s-m);
 }
 

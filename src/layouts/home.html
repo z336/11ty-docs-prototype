@@ -1,0 +1,54 @@
+---
+layout: base.html
+---
+
+{% include 'partials/aside.html' %}
+
+<article id="article" class="region | content">
+  <header class="wrapper | flow | page-header"><h1>{{ title }}</h1></header>
+  <article class="wrapper | flow | prose">
+    {{ content }}
+    <article class="grid">
+      <div class="docs-box">
+        <h2>Tutorial</h2>
+        <ul role="list">
+          {% for item in navigation.docs.tutorial %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="docs-box">
+        <h2>How-to</h2>
+        <ul role="list">
+          {% for item in navigation.docs.howTo %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="docs-box">
+        <h2>Reference</h2>
+        <ul role="list">
+          {% for item in navigation.docs.reference %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="docs-box">
+        <h2>Explanation</h2>
+        <ul role="list">
+          {% for item in navigation.docs.explanation %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="docs-box">
+        <h2>FAQ</h2>
+        <ul role="list">
+          {% for item in navigation.docs.faq %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </article>
+  </article>
+</article>

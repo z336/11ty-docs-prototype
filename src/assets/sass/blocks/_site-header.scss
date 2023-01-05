@@ -1,6 +1,6 @@
 .site-header {
-  --region-space-top: var(--space-xs-s);
-  --region-space-bottom: var(--space-xs-s);
+  --region-space-top: var(--space-m);
+  --region-space-bottom: var(--space-m);
   position: fixed;
   left: 0;
   right: 0;
@@ -8,8 +8,17 @@
   background-color: var(--color-light);
   nav {
     display: flex;
-    ul {
-      margin-inline-start: 7rem;
-    }
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-basis: 18rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+  a {
+    text-decoration: none;
   }
 }

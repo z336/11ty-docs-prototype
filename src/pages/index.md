@@ -1,6 +1,6 @@
 ---
-title: Home
-layout: page.html
+title: Docs Prototype
+layout: home.html
 permalink: /
 ---
 

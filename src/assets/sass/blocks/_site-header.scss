@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   top: 0;
+  padding-inline: var(--gutter);
   background-color: var(--color-light);
   nav {
     display: flex;

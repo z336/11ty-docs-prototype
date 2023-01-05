@@ -1,5 +1,6 @@
 .page-header {
   --wrapper-max-width: 60rem;
-  padding-bottom: var(--space-m);
-  margin-top: var(--space-xl);
+  padding-inline: var(--gutter);
+  padding-block-end: var(--space-m);
+  margin-block-start: var(--space-xl);
 }

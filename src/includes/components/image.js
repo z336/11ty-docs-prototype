@@ -9,7 +9,7 @@ async function image(src, alt, caption, sizes = "100vw") {
   }
 
   let metadata = await Image(src, {
-    widths: [300, 600, 900],
+    widths: [300, 600, 900, 1200],
     formats: ["avif", "webp", "jpeg"],
     urlPath: "/assets/images/",
     outputDir: "./_site/assets/images/",

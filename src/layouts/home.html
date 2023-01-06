@@ -8,46 +8,16 @@ layout: base.html
   <article class="wrapper | flow | prose">
     {{ content }}
     <article class="grid">
+      {% for item in navigation.docs %}
       <div class="docs-box">
-        <h2>Tutorial</h2>
+        <h2>{{ item.section }}</h2>
         <ul role="list">
-          {% for item in navigation.docs.tutorial %}
+          {% for item in item.articles %}
           <li><a href="{{ item.url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
-      <div class="docs-box">
-        <h2>How-to</h2>
-        <ul role="list">
-          {% for item in navigation.docs.howTo %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="docs-box">
-        <h2>Reference</h2>
-        <ul role="list">
-          {% for item in navigation.docs.reference %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="docs-box">
-        <h2>Explanation</h2>
-        <ul role="list">
-          {% for item in navigation.docs.explanation %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="docs-box">
-        <h2>FAQ</h2>
-        <ul role="list">
-          {% for item in navigation.docs.faq %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
+      {% endfor %}
     </article>
     {% include 'partials/help.html' %}
   </article>

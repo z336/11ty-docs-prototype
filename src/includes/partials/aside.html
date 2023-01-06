@@ -2,45 +2,15 @@
 
 <aside class="region | menu">
   <nav>
+    {% for item in navigation.docs %}
     <details>
-      <summary><h2>Tutorial</h2></summary>
+      <summary><h2>{{ item.section }}</h2></summary>
       <ul role="list">
-        {% for item in navigation.docs.tutorial %}
+        {% for item in item.articles %}
         <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
         {% endfor %}
       </ul>
     </details>
-    <details>
-      <summary><h2>How-to</h2></summary>
-      <ul role="list">
-        {% for item in navigation.docs.howTo %}
-        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </details>
-    <details>
-      <summary><h2>Reference</h2></summary>
-      <ul role="list">
-        {% for item in navigation.docs.reference %}
-        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </details>
-    <details>
-      <summary><h2>Explanation</h2></summary>
-      <ul role="list">
-        {% for item in navigation.docs.explanation %}
-        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </details>
-    <details>
-      <summary><h2>FAQ</h2></summary>
-      <ul role="list">
-        {% for item in navigation.docs.faq %}
-        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </details>
+    {% endfor %}
   </nav>
 </aside>

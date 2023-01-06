@@ -196,6 +196,8 @@ img {
 }
 
 .docs-box {
+  list-style: none;
+  padding: 0;
   h2 {
     font-size: var(--step-1);
   }

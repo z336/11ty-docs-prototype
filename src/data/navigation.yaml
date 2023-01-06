@@ -7,28 +7,28 @@ docs:
   - section: Explanation
     articles:
       - title: An Explanation
-        url: /explanation/an-explanation/
+        url: /docs/explanation/an-explanation/
       - title: Another Explanation
-        url: /explanation/another-explanation/
+        url: /docs/explanation/another-explanation/
   - section: How-to
     articles:
       - title: A How-to
-        url: /how-to/a-how-to/
+        url: /docs/how-to/a-how-to/
       - title: An Additional How-to
-        url: /how-to/an-additional-how-to/
+        url: /docs/how-to/an-additional-how-to/
   - section: Reference
     articles:
       - title: Reference
-        url: /reference/reference/
+        url: /docs/reference/reference/
       - title: Another Reference
-        url: /reference/another-reference/
+        url: /docs/reference/another-reference/
   - section: Tutorial
     articles:
       - title: A Tutorial
-        url: /tutorial/a-tutorial/
+        url: /docs/tutorial/a-tutorial/
       - title: A Second Tutorial
-        url: /tutorial/a-second-tutorial/
+        url: /docs/tutorial/a-second-tutorial/
   - section: FAQ
     articles:
       - title: FAQ
-        url: /faq/faq/
+        url: /docs/faq/faq/

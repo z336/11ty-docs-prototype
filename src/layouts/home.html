@@ -9,14 +9,16 @@ layout: base.html
     {{ content }}
     <article class="grid">
       {% for item in navigation.docs %}
-      <div class="docs-box">
-        <h2>{{ item.section }}</h2>
-        <ul role="list">
-          {% for item in item.articles %}
-          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
+      <ul class="docs-box">
+        <li>
+          <h2>{{ item.section }}</h2>
+          <ul role="list">
+            {% for item in item.articles %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
       {% endfor %}
     </article>
     {% include 'partials/help.html' %}

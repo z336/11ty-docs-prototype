@@ -2,8 +2,8 @@
 layout: base.html
 ---
 
-{% include 'partials/aside.html' %}
 <article id="article" class="region | content | home">
+  {% include 'partials/aside.html' %}
   <header class="wrapper | flow | page-header"><h1>{{ title }}</h1></header>
   <article class="wrapper | flow | prose">
     {{ content }}

@@ -1,13 +1,12 @@
 const { load } = require("js-yaml");
-const { readableDate, htmlDateString, getFullYear } = require("./config/filters/index.js");
-const markdown = require("./config/plugins/index.js");
-const image = require("./src/includes/components/image");
-const callout = require("./src/includes/components/callout");
-const details = require("./src/includes/components/details");
+const { readableDate, htmlDateString, getFullYear } = require("./config/filters/");
+const markdown = require("./config/plugins/");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { callout, details, image } = require("./config/shortcodes");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addWatchTarget("./src/sass/");
+  // Watch Sass
+  eleventyConfig.addWatchTarget("./src/assets/sass/");
 
   // Parse Yaml files
   eleventyConfig.addDataExtension("yaml", load);
@@ -26,7 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdown);
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  // Shortcodes ("components")
+  // Shortcodes
   eleventyConfig.addPairedShortcode("callout", callout);
   eleventyConfig.addPairedShortcode("details", details);
   eleventyConfig.addLiquidShortcode("image", image);

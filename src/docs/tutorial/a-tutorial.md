@@ -75,4 +75,35 @@ if (currentPage) {
 }
 ```
 
+```css
+code,
+pre {
+  padding: 0.125em 0.4em;
+  font-family: var(--font-mono);
+  background: var(--color-dark);
+  border-radius: var(--border-radius);
+  color: var(--color-light);
+  font-size: var(--size-step-0);
+}
+```
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+```
+
+```python
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+```
+
+```sql
+SELECT * FROM Customers
+ORDER BY Country DESC;
+```
+
 Peanut butter crunch guacamole pinch of yum açai almonds peach strawberry mango seeds springtime strawberry blackberries almond milk chai latte with salad mushroom risotto creamy cauliflower alfredo cherry bomb pepper overflowing berries samosa kale roasted butternut squash cranberry spritzer chilies creamiest miso dressing ultimate chocolate peanut butter dip.

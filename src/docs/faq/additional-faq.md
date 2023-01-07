@@ -1,10 +1,11 @@
 ---
-title: FAQ
-overview: This is an article with a bunch of FAQs.
-permalink: /docs/faq/
+title: Another FAQ
+overview: This is an article with additional bunch of FAQs.
 breadcrumbs:
   - title: Home
     url: /
+  - title: FAQ
+    url: /docs/faq/
 ---
 
 {% details "callout | details", "Why is x happening to z?" %}

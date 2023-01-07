@@ -107,22 +107,12 @@ img {
     font-size: var(--step-0);
     font-weight: bold;
   }
-  a:is(:hover, :focus) {
-    color: var(--color-light);
-    background-color: var(--color-dark);
-    padding: 0.25rem;
-    margin: -0.25rem;
-    text-decoration: none;
-  }
   [aria-current="page"] {
     color: var(--color-light);
     background-color: var(--color-dark);
     padding: 0.25rem;
     margin: -0.25rem;
     text-decoration: none;
-  }
-  [aria-current="page"]:focus {
-    outline: double var(--color-dark) 0.5rem;
   }
 
   // Todo: switch to postcss + autoprefixer
@@ -179,6 +169,7 @@ img {
     top: 0;
     bottom: 0;
     width: 18rem;
+    --flow-space: var(--space-2xl);
     padding-inline: var(--gutter);
     padding-block: var(--space-s);
     margin-top: var(--space-xl);

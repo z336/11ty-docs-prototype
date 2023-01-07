@@ -5,6 +5,7 @@ breadcrumbs:
   - title: Home
     url: /
   - title: Tutorial
+    url: /docs/tutorial/
 ---
 
 [toc]

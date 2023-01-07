@@ -1,37 +1,14 @@
 {% assign currentPage = page.url %}
 
-<nav class="navbar" role="primary">
-  <ul>
-    {% for item in navigation.pages %}
-    <li>
-        <a href="{{ item.url }}"
-        {% if currentPage == item.url %}aria-current="page"{% endif %}>
-        {{ item.title }}
-        </a>
-    </li> 
-    {% endfor %}
-    <li>Search</li>
-  </ul>
+<nav>
+  {% for item in navigation.docs %}
+  <details>
+    <summary><h2>{{ item.section }}</h2></summary>
+    <ul role="list">
+      {% for item in item.articles %}
+      <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </details>
+  {% endfor %}
 </nav>
-
-<template id="burger-template">
-  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
-    <span class="display">Menu</span>
-    <svg width="24" height="24" aria-hidden="true">
-      <path
-        d="M12 5V19"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M5 12H19"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  </button>
-</template>

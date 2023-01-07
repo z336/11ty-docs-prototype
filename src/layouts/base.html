@@ -4,17 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      {% if page.url == '/' %} {{ metadata.title }} {% else %} {{ title }} | {{
-      metadata.title }} {% endif %}
+      {% if page.url == '/' %} {{ metadata.title }} {% else %} {{ title }} | {{ metadata.title }} {% endif %}
     </title>
     <meta name="description" content="{{ description or metadata.description }}" />
     <meta name="generator" content="{{ eleventy.generator }}" />
     <meta name="theme-color" content="#000" />
-    <link
-      rel="icon"
-      href="{{ '/assets/images/favicon.svg' | url }}"
-      type="image/svg+xml"
-    />
+    <link rel="icon" href="{{ '/assets/images/favicon.svg' | url }}" type="image/svg+xml" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}" />
     <link
       rel="preload"

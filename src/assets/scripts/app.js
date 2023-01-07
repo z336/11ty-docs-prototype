@@ -1,3 +1,5 @@
+// const { html } = require("code-tag");
+
 //Append the table of contents heading to avoid mapping it to its own list
 
 const toc = document.querySelector(".table-of-contents");
@@ -14,38 +16,53 @@ if (currentPage) {
   currentPage.closest("details").setAttribute("open", "");
 }
 
-// Mobile nav menu
+// tableofcontents wip
+// const getHeadings = document.querySelectorAll(".heading-anchor");
 
-const nav = document.querySelector("nav");
-const list = nav.querySelector("ul");
-const burgerClone = document.querySelector("#burger-template").content.cloneNode(true);
-const svg = nav.querySelector("svg");
+// const elements = Array.from(getHeadings).map((element) => {
+//   console.log(element);
+// });
 
-const button = burgerClone.querySelector("button");
-button.addEventListener("click", (event) => {
-  const isOpen = button.getAttribute("aria-expanded") === "false";
-  button.setAttribute("aria-expanded", isOpen);
-});
+// if (document.body.contains(toc)) {
+//   toc.insertAdjacentHTML("afterbegin", `${items}`);
+// }
 
-// avoid DRY: disabling menu
-const disableMenu = () => {
-  button.setAttribute("aria-expanded", false);
-  button.focus();
-};
+// if (document.body.contains(tableOfContents)) {
+//   tableOfContents.insertAdjacentElement("afterbegin", "<p>hey</p>");
+// }
 
-//  close on escape
-nav.addEventListener("keyup", (event) => {
-  if (event.code === "Escape") {
-    disableMenu();
-  }
-});
+// // Mobile nav menu
 
-// close if clicked outside of event target
-document.addEventListener("click", (event) => {
-  const isClickInsideElement = nav.contains(event.target);
-  if (!isClickInsideElement) {
-    disableMenu();
-  }
-});
+// const nav = document.querySelector("nav");
+// const list = nav.querySelector("ul");
+// const burgerClone = document.querySelector("#burger-template").content.cloneNode(true);
+// const svg = nav.querySelector("svg");
 
-nav.insertBefore(burgerClone, list);
+// const button = burgerClone.querySelector("button");
+// button.addEventListener("click", (event) => {
+//   const isOpen = button.getAttribute("aria-expanded") === "false";
+//   button.setAttribute("aria-expanded", isOpen);
+// });
+
+// // avoid DRY: disabling menu
+// const disableMenu = () => {
+//   button.setAttribute("aria-expanded", false);
+//   button.focus();
+// };
+
+// //  close on escape
+// nav.addEventListener("keyup", (event) => {
+//   if (event.code === "Escape") {
+//     disableMenu();
+//   }
+// });
+
+// // close if clicked outside of event target
+// document.addEventListener("click", (event) => {
+//   const isClickInsideElement = nav.contains(event.target);
+//   if (!isClickInsideElement) {
+//     disableMenu();
+//   }
+// });
+
+// nav.insertBefore(burgerClone, list);

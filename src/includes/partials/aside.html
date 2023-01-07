@@ -1,16 +1,1 @@
-{% assign currentPage = page.url %}
-
-<aside class="region | menu">
-  <nav>
-    {% for item in navigation.docs %}
-    <details>
-      <summary><h2>{{ item.section }}</h2></summary>
-      <ul role="list">
-        {% for item in item.articles %}
-        <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </details>
-    {% endfor %}
-  </nav>
-</aside>
+<aside class="region | menu">{% include 'partials/menu.html' %}</aside>

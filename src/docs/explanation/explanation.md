@@ -1,10 +1,21 @@
 ---
 title: Explanation
-overview: This is the overview section. It only displays if there is an overview for the article. Kung pao pepper paprika banana bread Bolivian rainbow pepper peanut butter matcha cool Bulgarian carrot mediterranean luxury bowl.
+overview: Explanation is discussion that clarifies and illuminates a particular topic. Explanation is understanding-oriented.
 permalink: /docs/explanation/
 breadcrumbs:
   - title: Home
     url: /
 ---
 
-lorem
+[toc]
+
+Explanation clarifies, deepens and broadens the reader’s understanding of a subject.
+Explanation - understanding oriented, theoretical knowledge, that serves our study
+
+It’s not concerned with what the user might be doing, like tutorials and how-to guides. It’s not a close-up view of the machinery, like reference material. It’s documentation that approaches a topic from a higher perspective, and from different angles.
+
+This allows explanation to become discussion, a more relaxed, freer way to consider something. Explanation joins things together. It’s documentation that it makes sense to read while away from the product itself.
+
+## See also
+
+- [Explanation](https://diataxis.fr/explanation/)

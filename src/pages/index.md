@@ -1,5 +1,5 @@
 ---
-title: Docs Prototype
+title: Docs
 layout: home.html
 permalink: /
 ---

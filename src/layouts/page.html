@@ -2,24 +2,22 @@
 layout: base.html
 ---
 
-<div class="main-layout">
-  {% include 'partials/aside.html' %}
-  <article class="region | content">
-    <header class="wrapper | flow | page-header">
-      {% if breadcrumbs %}
-      <ul class="breadcrumb" role="list">
-        {% for item in breadcrumbs %}
-        <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %} {{item.title }}{% endif %}</li>
-        {% endfor %}
-        <li><a href="{{ page.url }}">{{ title }}</a></li>
-      </ul>
-      {% endif %}
-      <h1>{{ title }}</h1>
-    </header>
-    <article class="wrapper | flow | prose">
-      {% if overview %}
-      <p>{{ overview }}</p>
-      {% endif %} {{ content }} {% include 'partials/help.html' %}
-    </article>
+{% include 'partials/aside.html' %}
+<article class="region | content">
+  <header class="wrapper | flow | page-header">
+    {% if breadcrumbs %}
+    <ul class="breadcrumb" role="list">
+      {% for item in breadcrumbs %}
+      <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %} {{item.title }}{% endif %}</li>
+      {% endfor %}
+      <li><a href="{{ page.url }}">{{ title }}</a></li>
+    </ul>
+    {% endif %}
+    <h1>{{ title }}</h1>
+  </header>
+  <article class="wrapper | flow | prose">
+    {% if overview %}
+    <p>{{ overview }}</p>
+    {% endif %} {{ content }} {% include 'partials/help.html' %}
   </article>
-</div>
+</article>

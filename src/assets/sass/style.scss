@@ -84,9 +84,11 @@ img {
 
 footer {
   position: relative;
-  --region-space-top: var(--space-m);
-  --region-space-bottom: var(--space-m);
+  --region-space-top: var(--space-xl);
+  --region-space-bottom: var(--space-xl);
   padding-inline: var(--gutter);
   background-color: var(--color-light-secondary);
-  text-align: center;
+  div:last-of-type {
+    text-align: center;
+  }
 }

@@ -17,11 +17,3 @@ p + p {
     --flow-space: var(--space-s-m);
   }
 }
-
-.prose.heading-anchor:is(:hover, :focus) {
-  text-decoration: solid underline 0.1rem;
-  text-underline-offset: 0.35rem;
-}
-.prose.heading-anchor {
-  text-decoration: none;
-}

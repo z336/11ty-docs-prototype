@@ -1,0 +1,8 @@
+<ul class="nav-list" role="list">
+  {% for item in navigation.docs.sections %}
+  <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
+  <li><a href="/">API</a></li>
+  <li><a href="mailto:example@example.com">Need help?</a></li>
+  <li><p>Search</p></li>
+</ul>

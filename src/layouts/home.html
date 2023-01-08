@@ -2,25 +2,27 @@
 layout: base.html
 ---
 
-{% include 'partials/aside.html' %}
-<article id="article" class="region | content">
-  <header class="wrapper | flow | page-header"><h1>{{ title }}</h1></header>
-  <article class="wrapper | flow | prose">
-    {{ content }}
-    <div class="grid">
-      {% for item in navigation.docs %}
-      <ul class="docs-box">
-        <li>
-          <h2>{{ item.section }}</h2>
-          <ul role="list">
-            {% for item in item.articles %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-            {% endfor %}
-          </ul>
-        </li>
-      </ul>
-      {% endfor %}
-    </div>
-    {% include 'partials/help.html' %}
+<div class="main-layout">
+  {% include 'partials/aside.html' %}
+  <article id="article" class="region | content">
+    <header class="wrapper | flow | page-header"><h1>{{ title }}</h1></header>
+    <article class="wrapper | flow | prose">
+      {{ content }}
+      <div class="grid">
+        {% for item in navigation.docs.sections %}
+        <ul class="docs-box">
+          <li>
+            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+            <ul role="list">
+              {% for item in item.articles %}
+              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        </ul>
+        {% endfor %}
+      </div>
+      {% include 'partials/help.html' %}
+    </article>
   </article>
-</article>
+</div>

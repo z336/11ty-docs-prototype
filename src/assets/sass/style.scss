@@ -10,14 +10,6 @@ body {
   font-size: var(--step-0);
 }
 
-footer {
-  text-align: center;
-  --region-space-top: var(--space-m);
-  --region-space-bottom: var(--space-m);
-  --wrapper-max-width: 60rem;
-  padding-inline: var(--gutter);
-}
-
 h1 {
   font-size: var(--step-3);
 }
@@ -89,17 +81,17 @@ img {
   border-radius: var(--border-radius);
 }
 
-.menu {
-  @media (max-width: 60rem) {
-    display: none;
-  }
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 18rem;
+footer {
+  text-align: center;
+  --region-space-top: var(--space-m);
+  --region-space-bottom: var(--space-m);
+  // --wrapper-max-width: 60rem;
   padding-inline: var(--gutter);
-  margin-block-start: var(--space-xl);
+  position: relative;
+}
+
+.menu {
+  padding-inline: var(--gutter);
   background-color: var(--color-light);
   font-size: var(--step--1);
   h2 {
@@ -110,8 +102,7 @@ img {
   [aria-current="page"] {
     color: var(--color-light);
     background-color: var(--color-dark);
-    padding: 0.25rem;
-    margin: -0.25rem;
+    display: block;
     text-decoration: none;
   }
 
@@ -123,8 +114,13 @@ img {
     }
     ul {
       list-style: none;
-      padding-inline: var(--space-m);
+      padding-inline: 0;
       padding-block: var(--space-3xs-2xs);
+      li {
+        a {
+          padding-inline-start: var(--space-m);
+        }
+      }
     }
     summary::-webkit-details-marker {
       display: none;
@@ -152,11 +148,8 @@ img {
   }
 }
 
-// Todo: margin on home page
+//todo: margin on home page
 .content {
-  @media (min-width: 60rem) {
-    margin-inline-start: 18rem;
-  }
   @media (min-width: 80rem) {
     margin-inline-end: 18rem;
   }
@@ -166,13 +159,12 @@ img {
   @media (min-width: 80rem) {
     position: fixed;
     right: 0;
-    top: 0;
+    top: var(--offset);
     bottom: 0;
     width: 18rem;
-    --flow-space: var(--space-2xl);
+    // Compensate for no region spacing on this element
+    --flow-space: var(--space-l);
     padding-inline: var(--gutter);
-    padding-block: var(--space-s);
-    margin-top: var(--space-xl);
     background-color: var(--color-light);
     font-size: var(--step--1);
     h2 {
@@ -197,4 +189,26 @@ img {
     padding-inline: 0;
     padding-block: var(--space-3xs-2xs);
   }
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "menu content";
+}
+
+.menu {
+  grid-area: menu;
+  max-height: calc(100vh - var(--offset));
+  overflow: auto;
+  position: fixed;
+  top: var(--offset);
+  left: 0;
+  bottom: 0;
+  width: 18rem;
+}
+
+.content {
+  grid-area: content;
 }

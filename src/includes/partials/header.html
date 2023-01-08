@@ -1,8 +1,9 @@
-<a href="#article" class="skip-link">{{ metadata.skipContent }}</a>
+<a href="#article" class="skip-link">Skip to content</a>
+<a href="#menu" class="skip-link">Skip to menu</a>
 
 <header class="region | site-header">
-  <nav role="primary">
+  <nav aria-label="primary">
     <div class="logo"><a href="/">{{ metadata.title }}</a></div>
-    <p>Search</p>
+    {% include 'partials/navlist.html' %}
   </nav>
 </header>

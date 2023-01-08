@@ -5,8 +5,8 @@
   overflow: hidden;
   position: absolute;
   width: 1px;
-  top: 1rem;
-  left: 1rem;
+  top: 0.75rem;
+  left: var(--gutter);
   z-index: 999;
 }
 
@@ -17,7 +17,7 @@
   width: auto;
   background-color: var(--color-dark);
   color: var(--color-light);
-  padding: var(--space-s);
+  padding: var(--space-xs);
   line-height: 1;
 }
 

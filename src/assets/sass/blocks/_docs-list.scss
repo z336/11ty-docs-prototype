@@ -33,8 +33,9 @@
       }
       [aria-current="page"] {
         display: block;
-        color: var(--color-light);
-        background-color: var(--color-dark);
+        border-inline-start: solid var(--border-thin);
+        color: var(--color-dark);
+        background-color: var(--color-glare);
         text-decoration: none;
       }
     }

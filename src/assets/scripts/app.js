@@ -36,7 +36,7 @@ const list = nav.querySelector("ul");
 const burgerClone = document.querySelector("#burger-template").content.cloneNode(true);
 const svg = nav.querySelector("svg");
 
-const button = burgerClone.querySelector("button");
+const button = burgerClone.querySelector("#menu");
 button.addEventListener("click", (event) => {
   const isOpen = button.getAttribute("aria-expanded") === "false";
   button.setAttribute("aria-expanded", isOpen);

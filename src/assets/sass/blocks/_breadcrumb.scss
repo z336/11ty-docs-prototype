@@ -1,8 +1,8 @@
 .breadcrumb {
   padding: 0;
+  list-style-type: none;
   font-size: var(--step--1);
   li {
-    list-style-type: none;
     display: inline;
   }
   li + li:before {

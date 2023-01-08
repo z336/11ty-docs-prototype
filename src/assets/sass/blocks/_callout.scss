@@ -12,21 +12,21 @@
 }
 
 .callout.note {
+  border-inline-start: solid var(--border-thick) var(--color-note-secondary);
   background-color: var(--color-note);
-  border-left: solid 0.5rem var(--color-note-secondary);
 }
 
 .callout.important {
+  border-inline-start: solid var(--border-thick) var(--color-important-secondary);
   background-color: var(--color-important);
-  border-left: solid 0.5rem var(--color-important-secondary);
 }
 
 .callout.warning {
+  border-inline-start: solid var(--border-thick) var(--color-warning-secondary);
   background-color: var(--color-warning);
-  border-left: solid 0.5rem var(--color-warning-secondary);
 }
 
 .callout.new {
+  border-inline-start: solid var(--border-thick) var(--color-new-secondary);
   background-color: var(--color-new);
-  border-left: solid 0.5rem var(--color-new-secondary);
 }

@@ -1,20 +1,20 @@
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
   td,
   th {
-    border: 0.1rem solid var(--color-dark);
     padding-block: var(--space-3xs-2xs);
     padding-inline: var(--space-3xs);
+    border: var(--border-thin) solid var(--color-dark);
   }
   th {
+    background-color: var(--color-tertiary);
     text-align: left;
-    background-color: var(--color-new);
   }
   tr:nth-child(even) {
-    background-color: lightgray;
+    background-color: var(--color-light-secondary);
   }
   tr:hover {
-    background-color: rgb(166, 166, 166);
+    background-color: var(--color-tertiary);
   }
 }

@@ -1,6 +1,16 @@
 :root {
+  --measure: 60ch;
+  --gutter: var(--space-s-m);
+  --offset: 5rem;
+
+  --border-radius: 0.25rem;
+  --border-thick: 0.5rem;
+  --border-thin: 0.1rem;
+
   --color-dark: #000;
   --color-light: #f9f8f5;
+  --color-light-secondary: #efede5;
+  --color-tertiary: #d7d5ce;
 
   --color-new: #8aff80;
   --color-new-secondary: #457f40;
@@ -15,11 +25,6 @@
   --font-base: Authentic, Helvetica, Arial, sans-serif;
   --font-base-bold: AuthenticBold, Helvetica, Arial, sans-serif;
   --font-mono: Fira, monospace;
-
-  --border-radius: 0.25rem;
-  --offset: 5rem;
-  --measure: 60ch;
-  --gutter: var(--space-s-m);
 
   // https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75%7C0.5%7C0.25,1.5%7C2%7C3%7C4%7C6,s-l%7Cl-2xl&g=s,l,xl,12
 

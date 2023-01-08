@@ -9,7 +9,7 @@ layout: base.html
     {{ content }}
     <div class="grid | docs-box">
       {% for item in navigation.docs.sections %}
-      <ul>
+      <ul role="list">
         <li>
           <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
           <ul role="list">

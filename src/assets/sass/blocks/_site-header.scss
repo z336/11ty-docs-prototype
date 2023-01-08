@@ -1,18 +1,18 @@
 .site-header {
-  --region-space-top: var(--space-s);
-  --region-space-bottom: var(--space-s);
-  padding-inline: var(--gutter);
-  background-color: var(--color-light);
-  position: sticky;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: var(--offset);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--offset);
+  z-index: 2;
+  --region-space-top: var(--space-s);
+  --region-space-bottom: var(--space-s);
+  padding-inline: var(--gutter);
+  background-color: var(--color-light);
 }
 
 .logo {

@@ -2,6 +2,9 @@
   --wrapper-max-width: 60rem;
   --flow-space: var(--space-l-xl);
   padding-inline: var(--gutter);
+  figcaption {
+    --flow-space: 0;
+  }
 }
 
 .prose :is(h2, h3, h4) + *,
@@ -9,16 +12,16 @@ p + p {
   --flow-space: var(--space-s-m);
 }
 
-// .prose :is(nav + p) {
-//   @media (min-width: 80rem) {
-//     --flow-space: var(--space-s-m);
-//   }
-// }
+.prose :is(nav + p) {
+  @media (min-width: 80rem) {
+    --flow-space: var(--space-s-m);
+  }
+}
 
-.prose .heading-anchor:is(:hover, :focus) {
+.prose.heading-anchor:is(:hover, :focus) {
   text-decoration: solid underline 0.1rem;
   text-underline-offset: 0.35rem;
 }
-.prose .heading-anchor {
+.prose.heading-anchor {
   text-decoration: none;
 }

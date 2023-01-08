@@ -1,0 +1,50 @@
+.docs-list {
+  details {
+    summary {
+      list-style: none;
+      font-weight: bold;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::before {
+      display: inline-block;
+      width: 1.65em;
+      height: 1em;
+      background-image: url("/assets/images/plus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60% auto;
+      // alternative text rules
+      content: "(details list marker)";
+      overflow: hidden;
+      white-space: nowrap;
+      text-indent: 1.65em; // the width of the icon
+    }
+    ul {
+      padding-inline: 0;
+      padding-block: var(--space-3xs-2xs);
+      li {
+        // compensate for all nav li padding
+        padding-inline-start: 0;
+        a {
+          padding-inline-start: var(--space-m);
+        }
+      }
+      [aria-current="page"] {
+        display: block;
+        color: var(--color-light);
+        background-color: var(--color-dark);
+        text-decoration: none;
+      }
+    }
+  }
+  details[open] {
+    summary::before {
+      background-image: url("/assets/images/minus.svg");
+    }
+  }
+  > li {
+    padding-inline-start: var(--space-m);
+  }
+}

@@ -1,12 +1,12 @@
 {% assign currentPage = page.url %}
 
-{% for item in navigation.docs.sections %}
+{% for section in navigation.docs.sections %}
 <details>
-  <summary>{{ item.title }}</summary>
+  <summary>{{ section.title }}</summary>
   <ul role="list">
-    <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
-    {% for item in item.articles %}
-    <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
+    <li><a href="{{ section.url }}" {% if currentPage == section.url %}aria-current="page"{% endif %}>{{ section.title }}</a></li>
+    {% for article in section.articles %}
+    <li><a href="{{ article.url }}" {% if currentPage == article.url %}aria-current="page"{% endif %}>{{ article.title }}</a></li>
     {% endfor %}
   </ul>
 </details>

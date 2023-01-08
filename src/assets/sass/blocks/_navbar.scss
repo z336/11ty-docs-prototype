@@ -1,27 +1,14 @@
 // Set on parent to place it beneath the mobile menu when expanded
 .ontop {
-  position: relative;
   z-index: 1;
+  position: relative;
 }
 
 .navbar {
   ul {
-    display: flex;
-    gap: var(--space-l);
     background: var(--color-light);
-    list-style-type: none;
-
-    // }
-    // [aria-current="page"] {
-    //   color: var(--color-light);
-    //   background-color: var(--color-dark);
-    //   padding: 0.5rem;
-    //   margin: -0.5rem;
-    //   text-decoration: none;
-    // }
-    // [aria-current="page"]:focus {
-    //   outline: double var(--color-dark) 0.5rem;
-    // }
+    display: flex;
+    gap: var(--space-s);
   }
 
   // Set variables/desktop state
@@ -42,24 +29,29 @@
     }
   }
 
-  // Mobile always
-  position: var(--nav-position, absolute);
-  inset-block-start: 0.5rem;
-  inset-inline-end: 0.1rem;
+  // position: var(--nav-position, absolute);
+  // inset-block-start: 0.5rem;
+  // inset-inline-end: 0.1rem;
   details {
     display: var(--details-display, flex);
+    ul {
+      all: unset;
+    }
   }
   ul {
     box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
     flex-direction: var(--nav-list-layout, column);
     flex-wrap: wrap;
-    height: var(--nav-list-height, 100vh);
-    padding: var(--nav-list-padding, 2rem);
+    height: var(--nav-list-height);
+    padding: var(--nav-list-padding, var(--space-m));
     position: var(--nav-list-position, fixed);
-    inset-block-start: 0; /* Logical property. Equivalent to top: 0; */
-    inset-inline-end: 0; /* Logical property. Equivalent to right: 0; */
-    width: var(--nav-list-width, min(20rem, 100vw));
+    inset-block-start: var(--offset); // Logical property. Equivalent to top: 0;
+    inset-inline: 0; // Logical property. Equivalent to right: 0;
+    width: var(--nav-list-width);
     visibility: var(--nav-list-visibility, visible);
+    li {
+      padding-inline-start: var(--space-m);
+    }
   }
 
   // Mobile but not expanded
@@ -68,24 +60,22 @@
     visibility: var(--nav-list-visibility, hidden);
   }
   button {
+    all: unset;
     display: var(--nav-button-display, flex);
     align-items: center;
     position: relative;
     z-index: 2;
-    padding-right: var(--space-s-m);
     cursor: pointer;
-    all: unset;
+    padding-right: var(--space-s-m);
   }
   span {
     padding-right: var(--space-2xs-xs);
-    font-size: var(--step-0);
   }
   svg {
     height: 100%;
     width: auto;
   }
 
-  // Mobile and expanded
   [aria-expanded="true"] svg {
     transform: var(--nav-list-rotate, rotate(45deg));
   }

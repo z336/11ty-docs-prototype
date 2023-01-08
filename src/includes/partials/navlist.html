@@ -1,11 +1,6 @@
-{% assign currentPage = page.url %}
-
 <ul role="list">
-  {% include 'partials/docslist.html' %} {% for item in navigation.docs.sections %}
-  <!-- <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-  {% endfor %} -->
-  <li><a href="/">API</a></li>
+  {% include 'partials/docslist.html' %}
+  <li><a href="https://duckduckgo.com/">API Reference</a></li>
   <li><a href="mailto:example@example.com">Need help?</a></li>
-  <!-- Todo: move this out of nav -->
   <li><p>Search</p></li>
 </ul>

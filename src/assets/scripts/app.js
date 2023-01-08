@@ -10,11 +10,17 @@ if (document.body.contains(toc)) {
 
 // Toggle details element in left navbar to stay open for current page
 
-const currentPage = document.querySelector(`.sidebar details a[aria-current="page"]`);
+const currentPage = document.querySelector(`#sidebar details a[aria-current="page"]`);
 
 if (currentPage) {
   currentPage.closest("details").setAttribute("open", "");
 }
+
+// const currentStuff = document.querySelector(`#navlist details a[aria-current="page"]`);
+
+// if (currentStuff) {
+//   currentPage.closest("details").setAttribute("open", "");
+// }
 
 // tableofcontents wip
 // const getHeadings = document.querySelectorAll(".heading-anchor");

@@ -1,0 +1,22 @@
+.table-of-contents {
+  @media (min-width: 80rem) {
+    position: fixed;
+    right: 0;
+    top: var(--offset);
+    bottom: 0;
+    width: 18rem;
+    // Compensate for no region spacing on this element
+    --flow-space: var(--space-l);
+    padding-inline: var(--gutter);
+    background-color: var(--color-light);
+    font-size: var(--step--1);
+    h2 {
+      display: inline-block;
+      font-size: var(--step-0);
+      font-weight: bold;
+    }
+    ol {
+      margin-top: 0;
+    }
+  }
+}

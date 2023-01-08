@@ -1,0 +1,61 @@
+.sidebar {
+  @media (max-width: 60rem) {
+    display: none;
+  }
+  max-height: calc(100vh - var(--offset));
+  overflow: auto;
+  position: fixed;
+  top: var(--offset);
+  left: 0;
+  bottom: 0;
+  width: 18rem;
+  padding-inline: var(--gutter);
+  background-color: var(--color-light);
+  font-size: var(--step--1);
+  [aria-current="page"] {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    display: block;
+    text-decoration: none;
+  }
+
+  details {
+    summary {
+      list-style: none;
+      font-weight: bold;
+    }
+    ul {
+      list-style: none;
+      padding-inline: 0;
+      padding-block: var(--space-3xs-2xs);
+      li {
+        a {
+          padding-inline-start: var(--space-m);
+        }
+      }
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary::before {
+      display: inline-block;
+      width: 1.65em;
+      height: 1em;
+      background-image: url("/assets/images/plus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60% auto;
+      // alternative text rules
+      content: "(details list marker)";
+      overflow: hidden;
+      white-space: nowrap;
+      text-indent: 1.65em; // the width of the icon
+    }
+  }
+
+  details[open] {
+    summary::before {
+      background-image: url("/assets/images/minus.svg");
+    }
+  }
+}

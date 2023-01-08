@@ -2,7 +2,7 @@
 
 {% for item in navigation.docs.sections %}
 <details>
-  <summary><h2>{{ item.title }}</h2></summary>
+  <summary>{{ item.title }}</summary>
   <ul role="list">
     <li><a href="{{ item.url }}" {% if currentPage == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a></li>
     {% for item in item.articles %}

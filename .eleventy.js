@@ -2,7 +2,7 @@ const { load } = require("js-yaml");
 const { readableDate, htmlDateString, getFullYear } = require("./config/filters/");
 const markdown = require("./config/plugins/");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const { callout, details, image } = require("./config/shortcodes");
+const { callout, details, image, tableOfContents } = require("./config/shortcodes");
 
 module.exports = function (eleventyConfig) {
   // Watch Sass
@@ -29,6 +29,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("callout", callout);
   eleventyConfig.addPairedShortcode("details", details);
   eleventyConfig.addLiquidShortcode("image", image);
+  eleventyConfig.addPairedShortcode("tableofcontents", tableOfContents);
 
   return {
     dir: {

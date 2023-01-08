@@ -10,7 +10,7 @@ if (document.body.contains(toc)) {
 
 // Toggle details element in left navbar to stay open for current page
 
-const currentPage = document.querySelector(`details a[aria-current="page"]`);
+const currentPage = document.querySelector(`.sidebar details a[aria-current="page"]`);
 
 if (currentPage) {
   currentPage.closest("details").setAttribute("open", "");
@@ -20,16 +20,8 @@ if (currentPage) {
 // const getHeadings = document.querySelectorAll(".heading-anchor");
 
 // const elements = Array.from(getHeadings).map((element) => {
-//   console.log(element);
+//   return [element.hash, element.innerText];
 // });
-
-// if (document.body.contains(toc)) {
-//   toc.insertAdjacentHTML("afterbegin", `${items}`);
-// }
-
-// if (document.body.contains(tableOfContents)) {
-//   tableOfContents.insertAdjacentElement("afterbegin", "<p>hey</p>");
-// }
 
 // Mobile nav menu
 

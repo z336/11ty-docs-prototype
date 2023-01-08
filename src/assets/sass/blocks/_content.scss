@@ -1,0 +1,8 @@
+.content {
+  @media (min-width: 60rem) {
+    margin-inline-start: 18rem;
+  }
+  @media (min-width: 80rem) {
+    margin-inline-end: 18rem;
+  }
+}

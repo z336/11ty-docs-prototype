@@ -4,7 +4,6 @@ const { html } = require("code-tag");
 
 async function image(src, alt, caption, sizes = "100vw") {
   if (alt === undefined) {
-    // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
   }
 

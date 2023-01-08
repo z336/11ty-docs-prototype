@@ -1,0 +1,14 @@
+.docs-box {
+  ul {
+    list-style: none;
+    padding: 0;
+    h2 {
+      font-size: var(--step-1);
+    }
+    ul {
+      list-style: none;
+      padding-inline: 0;
+      padding-block: var(--space-3xs-2xs);
+    }
+  }
+}

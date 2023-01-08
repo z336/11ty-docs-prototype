@@ -24,7 +24,6 @@ Bolivian rainbow pepper.
 
 Bolivian rainbow pepper.
 
-- blood
 - orange
 - arugula
 - salad
@@ -41,10 +40,9 @@ Bolivian rainbow pepper.
 
 Bolivian rainbow pepper.
 
-1. blood
-2. orange
-3. arugula
-4. salad
+1. orange
+2. arugula
+3. salad
 
 {% endcallout %}
 

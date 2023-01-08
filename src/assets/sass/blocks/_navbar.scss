@@ -5,12 +5,11 @@
 }
 
 .navbar {
-  // Always styles
   ul {
     list-style-type: none;
     background: var(--color-light);
     display: flex;
-    gap: var(--space-s-l);
+    gap: var(--space-l);
     // a {
     //   text-decoration: none;
     //   @media (hover: hover) {
@@ -37,6 +36,7 @@
 
   // Set variables/desktop state
   @media (min-width: 60rem) {
+    --details-display: none;
     --nav-button-display: none;
     --nav-position: static;
     ul {
@@ -54,8 +54,11 @@
 
   // Mobile always
   position: var(--nav-position, absolute);
-  // inset-block-start: 0.5rem;
+  inset-block-start: 0.5rem;
   inset-inline-end: 0.1rem;
+  details {
+    display: var(--details-display, flex);
+  }
   ul {
     box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
     flex-direction: var(--nav-list-layout, column);

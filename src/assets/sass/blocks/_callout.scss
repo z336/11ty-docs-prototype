@@ -2,7 +2,7 @@
   padding: var(--space-xs-s);
   border-radius: var(--border-radius);
   > * + * {
-    margin-top: var(--space-3xs-2xs);
+    margin-block-start: var(--space-3xs-2xs);
   }
 }
 

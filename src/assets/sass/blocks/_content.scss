@@ -1,6 +1,6 @@
 .content {
-  // Maintain focus at top of page when tabbing
-  scroll-margin-block-start: 10rem;
+  // Maintain focus at top of page when tabbing to conten. but provide visual cue that focus is on on content
+  scroll-margin-block-start: calc(var(--offset) - var(--space-l));
   @media (min-width: 60rem) {
     margin-inline-start: 18rem;
   }

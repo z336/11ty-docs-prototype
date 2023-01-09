@@ -96,6 +96,10 @@ footer {
 
 // Mark accessibility
 
+mark {
+  background-color: var(--color-callout-yellow);
+}
+
 mark::before,
 mark::after {
   clip-path: inset(100%);

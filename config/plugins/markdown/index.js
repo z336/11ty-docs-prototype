@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItMark = require("markdown-it-mark");
 const markdownItToc = require("markdown-it-toc-done-right");
 
 const anchorSlugify = (s) =>
@@ -26,6 +27,7 @@ const markdown = markdownIt({
       class: "heading-anchor",
     }),
   })
+  .use(markdownItMark)
   .use(markdownItToc, {
     containerClass: "flow | table-of-contents",
   });

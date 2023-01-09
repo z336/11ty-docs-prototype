@@ -13,6 +13,38 @@
   --region-space-bottom: var(--space-s);
   padding-inline: var(--gutter);
   background-color: var(--color-light);
+  a {
+    text-decoration: none;
+  }
+  @media (min-width: 60rem) {
+    a:is(:hover, :focus) {
+      text-underline-offset: 0.5rem;
+      text-decoration: underline 0.25rem;
+    }
+    [aria-current="page"] {
+      text-underline-offset: 0.5rem;
+      text-decoration: underline 0.25rem;
+    }
+  }
+  @media (max-width: 60rem) {
+    ul {
+      padding-block: var(--space-3xs-2xs);
+      li {
+        // compensate for all nav li padding
+        padding-inline-start: 0;
+        a {
+          padding-inline-start: var(--space-m);
+        }
+      }
+      [aria-current="page"] {
+        display: block;
+        border-inline-start: solid var(--border-thin);
+        color: var(--color-dark);
+        background-color: var(--color-gold);
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .logo {

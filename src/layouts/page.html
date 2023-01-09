@@ -10,7 +10,7 @@ layout: base.html
       {% for item in breadcrumbs %}
       <li>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %} {{item.title }}{% endif %}</li>
       {% endfor %}
-      <li><a href="{{ page.url }}">{{ title }}</a></li>
+      <li><a href="{{ page.url }}" aria-current="page">{{ title }}</a></li>
     </ul>
     {% endif %}
     <h1>{{ title }}</h1>

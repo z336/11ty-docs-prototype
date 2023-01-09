@@ -48,7 +48,8 @@ pre[class*="language-"] ::-moz-selection {
 code[class*="language-"]::selection,
 pre[class*="language-"]::selection,
 code[class*="language-"] ::selection,
-pre[class*="language-"] ::selection {
+pre[class*="language-"] ::selection,
+code::selection {
   color: var(--color-dark);
   background-color: var(--color-light);
 }

@@ -59,7 +59,7 @@
     transform: var(--nav-list-transform, translateX(100%));
     visibility: var(--nav-list-visibility, hidden);
   }
-  button {
+  .mobile-button {
     all: unset;
     display: var(--nav-button-display, flex);
     align-items: center;

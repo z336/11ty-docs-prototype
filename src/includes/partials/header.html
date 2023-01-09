@@ -5,7 +5,14 @@
   <div class="logo"><a href="/">{{ metadata.title }}</a></div>
   <nav id="mainnav" class="navbar | docs-list" aria-label="primary">{% include 'partials/navlist.html' %}</nav>
   <template id="burger-template">
-    <button id="menu" type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+    <button
+      class="mobile-button"
+      id="menu"
+      type="button"
+      aria-expanded="false"
+      aria-label="Menu"
+      aria-controls="mainnav"
+    >
       <span>Menu</span>
       <svg width="24" height="24" aria-hidden="true">
         <path

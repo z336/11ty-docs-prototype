@@ -9,7 +9,7 @@ table {
 
   th {
     padding-block: var(--space-2xs-xs);
-    background-color: var(--color-primary);
+    background-color: var(--color-blue-light);
     text-align: left;
   }
 
@@ -18,10 +18,10 @@ table {
   }
 
   tr:nth-child(even) {
-    background-color: var(--color-light-variant);
+    background-color: var(--color-grey-light);
   }
 
   tr:hover {
-    background-color: var(--color-highlight);
+    background-color: var(--color-gold);
   }
 }

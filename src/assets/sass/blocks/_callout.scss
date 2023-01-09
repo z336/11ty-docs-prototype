@@ -12,21 +12,21 @@
 }
 
 .callout.note {
-  border-inline-start: solid var(--border-thick) var(--color-note-secondary);
-  background-color: var(--color-note);
+  border-inline-start: solid var(--border-thick) var(--color-callout-yellow-secondary);
+  background-color: var(--color-callout-yellow);
 }
 
 .callout.important {
-  border-inline-start: solid var(--border-thick) var(--color-important-secondary);
-  background-color: var(--color-important);
+  border-inline-start: solid var(--border-thick) var(--color-callout-cyan-secondary);
+  background-color: var(--color-callout-cyan);
 }
 
 .callout.warning {
-  border-inline-start: solid var(--border-thick) var(--color-warning-secondary);
-  background-color: var(--color-warning);
+  border-inline-start: solid var(--border-thick) var(--color-callout-red-secondary);
+  background-color: var(--color-callout-red);
 }
 
 .callout.new {
-  border-inline-start: solid var(--border-thick) var(--color-new-secondary);
-  background-color: var(--color-new);
+  border-inline-start: solid var(--border-thick) var(--color-callout-green-secondary);
+  background-color: var(--color-callout-green);
 }

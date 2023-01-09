@@ -1,6 +1,6 @@
 <ul role="list">
-  {% include 'partials/docslist.html' %}
-  <li><a href="https://duckduckgo.com/">API Reference</a></li>
-  <li><a href="mailto:example@example.com">Need help?</a></li>
+  {% include 'partials/docslist.html' %} {% for pages in navigation.pages %}
+  <li><a href="{{ pages.url }}">{{ pages.title }}</a></li>
+  {% endfor %}
   <li>{% search %}</li>
 </ul>

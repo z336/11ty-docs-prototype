@@ -28,7 +28,7 @@ const markdown = markdownIt({
   })
   .use(markdownItToc, {
     containerClass: "flow | table-of-contents",
-    containerId: "article",
+    containerId: "content",
   });
 
 module.exports = markdown;

@@ -1,8 +1,10 @@
 pages:
   - title: Home
     url: /
-  - title: About
-    url: /about/
+  - title: API Reference
+    url: /api/
+  - title: Need help?
+    url: /contact/
 docs:
   sections:
     - title: Tutorial

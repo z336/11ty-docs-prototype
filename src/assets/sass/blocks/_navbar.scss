@@ -5,15 +5,9 @@
 }
 
 .navbar {
-  ul {
-    background: var(--color-light-variant);
-    display: flex;
-    gap: var(--space-s);
-  }
-
   // Set variables/desktop state
   @media (min-width: 60rem) {
-    --details-display: none;
+    --details-list-display: none;
     --nav-button-display: none;
     --nav-position: static;
     ul {
@@ -33,12 +27,14 @@
   // inset-block-start: 0.5rem;
   // inset-inline-end: 0.1rem;
   details {
-    display: var(--details-display, flex);
+    display: var(--details-list-display, flex);
     ul {
       all: unset;
     }
   }
   ul {
+    display: flex;
+    gap: var(--space-s);
     box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
     flex-direction: var(--nav-list-layout, column);
     flex-wrap: wrap;
@@ -49,6 +45,8 @@
     inset-inline: 0; // Logical property. Equivalent to right: 0;
     width: var(--nav-list-width);
     visibility: var(--nav-list-visibility, visible);
+    overflow: auto;
+    background-color: var(--nav-list-background, var(--color-light));
     li {
       padding-inline-start: var(--space-m);
     }

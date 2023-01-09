@@ -3,17 +3,24 @@ table {
   border-collapse: collapse;
   td,
   th {
-    padding-block: var(--space-3xs-2xs);
     padding-inline: var(--space-3xs);
     border: var(--border-thin) solid var(--color-dark);
   }
+
   th {
-    background-color: var(--color-highlight);
+    padding-block: var(--space-2xs-xs);
+    background-color: var(--color-primary);
     text-align: left;
   }
+
+  td {
+    padding-block: var(--space-3xs-2xs);
+  }
+
   tr:nth-child(even) {
     background-color: var(--color-light-variant);
   }
+
   tr:hover {
     background-color: var(--color-highlight);
   }

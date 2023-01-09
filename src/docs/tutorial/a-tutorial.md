@@ -111,7 +111,7 @@ Images must contain alternative text and a caption. Images are automatically pro
 
 {% image "./src/assets/images/vegetable-infograph.jpg", "An infograph explaining how to avoid food waste", "This is the caption of this infograph." %}
 
-## Paragraphs, lists, etc.
+## Paragraphs and lists
 
 Chili pepper simmer grapefruit jalapeño Thai basil curry hummus hot soba noodles thyme lemonade zest heat soy milk rich coconut cream basmati. Pine nuts red pepper chia seeds cilantro lime vinaigrette red grapes apricot cayenne dill green tea lime Thai super chili sriracha pecans blueberries coriander banh mi salad rolls hazelnut shiitake mediterranean vegetables.
 

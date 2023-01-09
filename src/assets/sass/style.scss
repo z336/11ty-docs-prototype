@@ -35,10 +35,13 @@ h6 {
   font-size: var(--step--2);
 }
 
+h1,
 h2,
 h3,
-h4 {
-  scroll-margin-top: var(--space-3xl);
+h4,
+h5,
+h6 {
+  scroll-margin-block-start: var(--space-3xl);
 }
 
 strong {
@@ -82,6 +85,10 @@ img {
   border-radius: var(--border-radius);
 }
 
+main {
+  min-height: 100vh;
+}
+
 footer {
   position: relative;
   --region-space-top: var(--space-xl);
@@ -93,7 +100,7 @@ footer {
   }
 }
 
-// new stuff below
+// Mark accessibility
 
 mark::before,
 mark::after {

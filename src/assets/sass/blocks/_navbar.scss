@@ -46,7 +46,7 @@
     inset-inline: 0; // Logical property. Equivalent to right: 0;
     width: var(--nav-list-width);
     visibility: var(--nav-list-visibility, visible);
-    overflow: auto;
+    overflow-y: auto;
     background-color: var(--nav-list-background, var(--color-light));
     li {
       padding-inline-start: var(--space-m);

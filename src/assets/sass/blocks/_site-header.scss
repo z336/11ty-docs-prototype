@@ -43,6 +43,10 @@
           background-color: var(--color-grey-light);
           text-decoration: none;
         }
+        input {
+          margin-inline-start: var(--space-m);
+          margin-block-end: var(--space-m);
+        }
       }
       [aria-current="page"] {
         display: block;

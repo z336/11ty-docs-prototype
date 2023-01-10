@@ -37,8 +37,9 @@
     gap: var(--space-s);
     box-shadow: var(--nav-list-shadow, 0px 10px 19px -7px rgba(0, 0, 0, 0.75));
     flex-direction: var(--nav-list-layout, column);
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     height: var(--nav-list-height);
+    max-height: 75vh;
     padding: var(--nav-list-padding, var(--space-m));
     position: var(--nav-list-position, fixed);
     inset-block-start: var(--offset); // Logical property. Equivalent to top: 0;

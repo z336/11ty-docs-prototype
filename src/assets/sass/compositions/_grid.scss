@@ -1,6 +1,6 @@
 .grid {
   display: grid;
-  grid-gap: var(--space-xl);
+  grid-gap: var(--space-l-xl);
 }
 
 @supports (width: min(250px, 100%)) {

@@ -11,8 +11,9 @@ layout: base.html
       {% for section in navigation.docs.sections %}
       <ul role="list">
         <li>
-          <h2><a href="{{ section.url }}">{{ section.title }}</a></h2>
+          <h2>{{ section.title }}</h2>
           <ul role="list">
+            <li><a href="{{ section.url }}">{{ section.title }}</a></li>
             {% for article in section.articles %}
             <li><a href="{{ article.url }}">{{ article.title }}</a></li>
             {% endfor %}

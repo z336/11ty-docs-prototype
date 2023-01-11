@@ -2,11 +2,11 @@
   @media (max-width: 60rem) {
     display: none;
   }
-  max-height: calc(100vh - var(--offset));
   position: fixed;
   top: var(--offset);
   left: 0;
   bottom: 0;
+  height: calc(100vh - var(--offset));
   width: 18rem;
   padding-inline: var(--gutter);
   overflow-y: auto;

@@ -12,7 +12,8 @@ p + p {
   --flow-space: var(--space-s-m);
 }
 
-.prose :is(nav + p) {
+// adjust for toc in fixed position
+.prose :is(.table-of-contents + p) {
   @media (min-width: 80rem) {
     --flow-space: var(--space-s-m);
   }

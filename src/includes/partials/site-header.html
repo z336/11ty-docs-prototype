@@ -7,7 +7,13 @@
   <nav id="mainnav" class="navbar | docs-list" aria-label="primary">
     <ul role="list">
       {% include 'partials/docslist.html' %} {% for page in navigation.pages %}
-      <li><a href="{{ page.url }}" {% if currentPage == page.url %}aria-current="page"{% endif %}>{{ page.title }}</a></li>
+      <li>
+        {% if currentPage == page.url %}
+        <a href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+        {% else %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+      </li>
       {% endfor %}
       <li>{% search %}</li>
     </ul>

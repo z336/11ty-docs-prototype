@@ -1,12 +1,22 @@
-{% assign currentPage = page.url %}
-
-{% for section in navigation.docs.sections %}
+{% assign currentPage = page.url %} {% for section in navigation.docs.sections %}
 <details>
   <summary>{{ section.title }}</summary>
   <ul class="flow" role="list">
-    <li><a href="{{ section.url }}" {% if currentPage == section.url %}aria-current="page"{% endif %}>{{ section.title }}</a></li>
+    <li>
+      {% if currentPage == section.url %}
+      <a href="{{ section.url }}" aria-current="page">{{ section.title }}</a>
+      {% else %}
+      <a href="{{ section.url }}">{{ section.title }}</a>
+      {% endif %}
+    </li>
     {% for article in section.articles %}
-    <li><a href="{{ article.url }}" {% if currentPage == article.url %}aria-current="page"{% endif %}>{{ article.title }}</a></li>
+    <li>
+      {% if currentPage == article.url %}
+      <a href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+      {% else %}
+      <a href="{{ article.url }}">{{ article.title }}</a>
+      {% endif %}
+    </li>
     {% endfor %}
   </ul>
 </details>

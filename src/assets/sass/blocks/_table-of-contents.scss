@@ -17,6 +17,9 @@
     }
     ol {
       margin-top: 0;
+      li {
+        padding-block-start: var(--space-3xs);
+      }
     }
   }
 }

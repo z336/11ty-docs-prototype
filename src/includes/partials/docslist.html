@@ -3,7 +3,7 @@
 {% for section in navigation.docs.sections %}
 <details>
   <summary>{{ section.title }}</summary>
-  <ul role="list">
+  <ul class="flow" role="list">
     <li><a href="{{ section.url }}" {% if currentPage == section.url %}aria-current="page"{% endif %}>{{ section.title }}</a></li>
     {% for article in section.articles %}
     <li><a href="{{ article.url }}" {% if currentPage == article.url %}aria-current="page"{% endif %}>{{ article.title }}</a></li>

@@ -34,17 +34,12 @@
   ul {
     display: flex;
     gap: var(--space-xs-s);
-    box-shadow: var(--nav-list-shadow, -1px 49px 78px -38px rgba(0, 0, 0, 0.75));
     flex-direction: var(--nav-list-layout, column);
-    // flex-wrap: wrap;
     padding: var(--nav-list-padding, var(--space-m));
-    // border-block-start: var(--nav-list-border-block-start, solid var(--color-grey-light) var(--border-thin));
-    // border-block-start: var(--nav-list-border-block-end, solid var(--color-grey-light) var(--border-thin));
     position: var(--nav-list-position, fixed);
     inset-block-start: var(--offset); // Logical property. Equivalent to top: 0;
     inset-inline: 0; // Logical property. Equivalent to right: 0;
     height: var(--nav-list-height, calc(100vh - var(--offset)));
-    // max-height: calc(100vh - var(--offset));
     width: var(--nav-list-width);
     visibility: var(--nav-list-visibility, visible);
     overflow-y: auto;

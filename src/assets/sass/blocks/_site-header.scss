@@ -12,6 +12,7 @@
   --region-space-top: var(--space-s);
   --region-space-bottom: var(--space-s);
   padding-inline: var(--gutter);
+  border-block-end: solid var(--color-grey-light) var(--border-thin);
   background-color: var(--color-light);
   a {
     text-decoration: none;

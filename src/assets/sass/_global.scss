@@ -65,7 +65,7 @@ a:not([href*="11ty-docs-prototype.com/"]):not([href^="#"]):not([href^="/"]):afte
 
 hr {
   border: none;
-  border-top: solid 0.1rem var(--color-dark);
+  border-block-start: solid 0.1rem var(--color-grey-light);
 }
 
 summary {

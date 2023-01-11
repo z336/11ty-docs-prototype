@@ -89,12 +89,11 @@ footer {
   background-color: var(--color-grey-dark);
 }
 
-// Mark accessibility
-
 mark {
   background-color: var(--color-callout-yellow);
 }
 
+// Mark accessibility
 mark::before,
 mark::after {
   clip-path: inset(100%);
@@ -112,4 +111,32 @@ mark::before {
 
 mark::after {
   content: " [highlight end] ";
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  td,
+  th {
+    padding-inline: var(--space-3xs);
+    border: var(--border-thin) solid var(--color-dark);
+  }
+
+  th {
+    padding-block: var(--space-2xs-xs);
+    background-color: var(--color-blue-light);
+    text-align: left;
+  }
+
+  td {
+    padding-block: var(--space-3xs-2xs);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--color-grey-light);
+  }
+
+  tr:hover {
+    background-color: var(--color-callout-yellow);
+  }
 }

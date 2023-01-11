@@ -1,9 +1,0 @@
-{% assign currentPage = page.url %}
-
-<ul role="list">
-  {% include 'partials/docslist.html' %} 
-  {% for page in navigation.pages %}
-  <li><a href="{{ page.url }}" {% if currentPage == page.url %}aria-current="page"{% endif %}>{{ page.title }}</a></li>
-  {% endfor %}
-  <li>{% search %}</li>
-</ul>

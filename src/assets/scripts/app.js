@@ -1,10 +1,10 @@
 // Append the table of contents heading to avoid mapping it to its own list
 
-const tableOfContents = document.querySelector(".table-of-contents");
+// const tableOfContents = document.querySelector(".table-of-contents");
 
-if (document.body.contains(tableOfContents)) {
-  tableOfContents.insertAdjacentHTML("afterbegin", "<h2>On this page</h2>");
-}
+// if (document.body.contains(tableOfContents)) {
+// tableOfContents.insertAdjacentHTML("afterbegin", "<h2>On this page</h2>");
+// }
 
 // Toggle details in left navbar to stay open for current page
 

@@ -7,7 +7,7 @@ breadcrumbs:
     url: /
 ---
 
-[toc]
+{% tableofcontents %}
 
 A tutorial must help a beginner achieve basic competence with a product, so that they can go on to use the product for their own purposes.
 

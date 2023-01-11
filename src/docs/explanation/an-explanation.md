@@ -8,7 +8,7 @@ breadcrumbs:
     url: /docs/explanation/
 ---
 
-[toc]
+{% tableofcontents %}
 
 ## Refreshing Cucumber
 

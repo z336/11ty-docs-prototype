@@ -82,10 +82,8 @@ main {
 
 footer {
   position: relative;
-  --region-space-top: var(--space-xl);
-  --region-space-bottom: var(--space-xl);
-  color: var(--color-light);
-  background-color: var(--color-grey-dark);
+  --region-space-top: var(--space-2xs);
+  --region-space-bottom: var(--space-l);
   nav {
     --wrapper-max-width: 60rem;
     padding-inline: var(--gutter);

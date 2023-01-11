@@ -29,7 +29,7 @@ const markdown = markdownIt({
   })
   .use(markdownItMark)
   .use(markdownItToc, {
-    containerClass: "flow | table-of-contents",
+    containerClass: "nav-links",
   });
 
 module.exports = markdown;

@@ -7,7 +7,7 @@ breadcrumbs:
     url: /
 ---
 
-[toc]
+{% tableofcontents %}
 
 Explanation clarifies, deepens and broadens the reader’s understanding of a subject.
 Explanation - understanding oriented, theoretical knowledge, that serves our study

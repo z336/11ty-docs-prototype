@@ -7,7 +7,7 @@ breadcrumbs:
     url: /
 ---
 
-[toc]
+{% tableofcontents %}
 
 How-to guides can be thought of as recipes, directions that guide the reader through the steps to achieve a specific end.
 How-to guides — task oriented, practical steps, that serve our work

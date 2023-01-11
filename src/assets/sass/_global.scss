@@ -84,9 +84,12 @@ footer {
   position: relative;
   --region-space-top: var(--space-xl);
   --region-space-bottom: var(--space-xl);
-  padding-inline: var(--gutter);
   color: var(--color-light);
   background-color: var(--color-grey-dark);
+  nav {
+    --wrapper-max-width: 60rem;
+    padding-inline: var(--gutter);
+  }
 }
 
 mark {
@@ -139,4 +142,8 @@ table {
   tr:hover {
     background-color: var(--color-callout-yellow);
   }
+}
+
+.nav-list {
+  --flow-space: var(--space-3xs-2xs);
 }

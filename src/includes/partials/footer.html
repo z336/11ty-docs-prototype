@@ -1,11 +1,11 @@
 {% assign currentPage = page.url %}
 
 <footer class="region">
-  <nav class="wrapper | prose | grid | docs-box">
+  <nav class="wrapper | grid | docs-box">
     <ul role="list">
       <li>
         <h2>Docs</h2>
-        <ul role="list">
+        <ul class="flow | nav-list" role="list">
           {% for section in navigation.docs.sections %}
           <li><a href="{{ section.url }}">{{ section.title}} </a></li>
           {% endfor %}
@@ -15,7 +15,7 @@
     <ul role="list">
       <li>
         <h2>Resources</h2>
-        <ul role="list">
+        <ul class="flow | nav-list" role="list">
           {% for page in navigation.pages %}
           <li><a href="{{ page.url }}" {% if currentPage == page.url %}aria-current="page"{% endif %}>{{ page.title }}</a></li>
           {% endfor %}

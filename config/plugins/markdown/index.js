@@ -26,6 +26,7 @@ const markdown = markdownIt({
     tabIndex: false,
     permalink: markdownItAnchor.permalink.headerLink({
       class: "heading-anchor",
+      safariReaderFix: true,
     }),
   })
   .use(markdownItLinkAttributes, [
@@ -43,6 +44,9 @@ const markdown = markdownIt({
   .use(markdownItMark)
   .use(markdownItToc, {
     containerClass: "nav-links",
+    format(x, htmlencode) {
+      return `<span>${htmlencode(x)}</span>`;
+    },
   });
 
 module.exports = markdown;

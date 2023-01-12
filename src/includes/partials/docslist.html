@@ -1,7 +1,7 @@
 {% assign currentPage = page.url %} {% for section in navigation.docs.sections %}
 <details>
   <summary>{{ section.title }}</summary>
-  <ul class="flow" role="list">
+  <ul class="flow | nav-list" role="list">
     <li>
       {% if currentPage == section.url %}
       <a href="{{ section.url }}" aria-current="page">{{ section.title }}</a>

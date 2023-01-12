@@ -27,7 +27,7 @@
       padding-block: var(--space-3xs-2xs);
       li {
         // compensate for all nav li padding
-        --flow-space: var(--space-3xs-2xs);
+        // --flow-space: var(--space-3xs-2xs);
         padding-inline-start: 0;
         a {
           padding-inline-start: calc(var(--space-m) + 0.2em);

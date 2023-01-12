@@ -5,6 +5,7 @@
 // Utilities
 
 @use "./utilities/flow";
+@use "./utilities/nav-list";
 @use "./utilities/region";
 @use "./utilities/wrapper";
 
@@ -16,7 +17,6 @@
 @use "./blocks/content";
 @use "./blocks/docs-box";
 @use "./blocks/docs-list";
-@use "./blocks/form.scss";
 @use "./blocks/heading-anchor";
 @use "./blocks/navbar";
 @use "./blocks/page-header";

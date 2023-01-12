@@ -1,0 +1,6 @@
+.nav-list {
+  --flow-space: var(--space-3xs-2xs);
+  @media (max-width: 60rem) {
+    --flow-space: var(--space-xs-s);
+  }
+}

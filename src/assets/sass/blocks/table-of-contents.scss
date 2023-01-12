@@ -24,7 +24,8 @@
       font-weight: bold;
     }
     ol {
-      margin-top: 0;
+      padding-inline-start: var(--space-s);
+      margin-block-start: 0;
       li {
         padding-block-start: var(--space-3xs);
       }

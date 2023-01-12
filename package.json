@@ -4,9 +4,9 @@
   "description": "Doc prototype.",
   "main": "index.html",
   "scripts": {
-    "watch:sass": "sass  --no-source-map --watch src/assets/sass:_site/assets/css",
+    "watch:sass": "sass  --no-source-map --watch src/assets/sass/style.scss:_site/assets/css/style.css",
     "watch:eleventy": "eleventy --serve",
-    "build:sass": "sass  --no-source-map src/assets/sass:_site/assets/css",
+    "build:sass": "sass  --no-source-map src/assets/sass/style.scss:_site/assets/css/style.css",
     "build:eleventy": "eleventy",
     "postbuild": "lightningcss --minify --targets '> 0.25%, not IE 11' _site/assets/css/*.css -o _site/assets/css/*.css",
     "start": "npm-run-all build:sass --parallel watch:*",

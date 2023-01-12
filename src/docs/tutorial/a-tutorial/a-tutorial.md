@@ -109,7 +109,7 @@ Bolivian rainbow pepper Vegan Ipsum Me lemon tahini dressing salty second course
 
 Images must contain alternative text and a caption. Images are automatically processed into various sizes and modern file formats, such as avif and webp. This ensures the right size and a lightweight version of the image is rendered with on the client.
 
-{% image "./src/assets/images/vegetable-infograph.jpg", "An infograph explaining how to avoid food waste", "This is the caption of this infograph." %}
+{% image "./src/docs/tutorial/a-tutorial/vegetable-infograph.jpg", "An infograph explaining how to avoid food waste", "This is the caption of this infograph." %}
 
 ## Links
 

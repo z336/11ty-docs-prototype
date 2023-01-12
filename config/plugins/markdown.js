@@ -43,7 +43,7 @@ const markdown = markdownIt({
   ])
   .use(markdownItMark)
   .use(markdownItToc, {
-    containerClass: "nav-links",
+    containerClass: "nav-list",
     format(x, htmlencode) {
       return `<span>${htmlencode(x)}</span>`;
     },

@@ -82,7 +82,8 @@ main {
 
 footer {
   position: relative;
-  --region-space-top: var(--space-2xs);
+  // article region space handles this
+  --region-space-top: 0;
   --region-space-bottom: var(--space-l);
   nav {
     --wrapper-max-width: 60rem;
@@ -119,13 +120,13 @@ table {
   border-collapse: collapse;
   td,
   th {
-    padding-inline: var(--space-3xs);
+    padding-inline: var(--space-2xs-xs);
     border: var(--border-thin) solid var(--color-dark);
   }
 
   th {
     padding-block: var(--space-2xs-xs);
-    background-color: var(--color-blue-light);
+    background-color: var(--color-grey-light);
     text-align: left;
   }
 

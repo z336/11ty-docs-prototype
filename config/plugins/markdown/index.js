@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItLinkAttributes = require("markdown-it-link-attributes");
 const markdownItMark = require("markdown-it-mark");
 const markdownItToc = require("markdown-it-toc-done-right");
 
@@ -27,6 +28,18 @@ const markdown = markdownIt({
       class: "heading-anchor",
     }),
   })
+  .use(markdownItLinkAttributes, [
+    {
+      // match external links
+      matcher(href) {
+        return href.match(/^https?:\/\//);
+      },
+      attrs: {
+        target: "_blank",
+        rel: "noopener",
+      },
+    },
+  ])
   .use(markdownItMark)
   .use(markdownItToc, {
     containerClass: "nav-links",

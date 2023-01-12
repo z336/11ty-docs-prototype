@@ -111,6 +111,10 @@ Images must contain alternative text and a caption. Images are automatically pro
 
 {% image "./src/assets/images/vegetable-infograph.jpg", "An infograph explaining how to avoid food waste", "This is the caption of this infograph." %}
 
+## Links
+
+[This link](/docs/explanation/an-explanation/) is internal and [this link](https://duckduckgo.com/) is external. The external link should open in a new tab.
+
 ## Marked text
 
 Highlight specific text with `==mark==`. ==This sentence has been highlighted==.

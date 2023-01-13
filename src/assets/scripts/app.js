@@ -68,7 +68,7 @@ blocks.forEach((block) => {
 
       setTimeout(() => {
         button.innerText = "Copy";
-      }, 1500);
+      }, 2000);
     });
   }
 });

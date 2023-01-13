@@ -1,12 +1,16 @@
 code,
 pre {
+  position: relative;
   padding: 0.125em 0.4em;
   font-family: var(--font-mono);
   background: var(--color-dark);
   border-radius: var(--border-radius);
   color: var(--color-light);
+  overflow: auto;
   button {
-    float: right;
+    position: absolute;
+    right: var(--gutter);
+    bottom: var(--gutter);
   }
 }
 

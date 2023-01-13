@@ -64,7 +64,7 @@ blocks.forEach((block) => {
     button.addEventListener("click", async () => {
       await copyCode(block);
 
-      button.innerText = "Copied";
+      button.innerText = "Copied ✅";
 
       setTimeout(() => {
         button.innerText = "Copy";

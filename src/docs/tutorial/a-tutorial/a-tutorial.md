@@ -88,6 +88,12 @@ SELECT * FROM Customers
 ORDER BY Country DESC;
 ```
 
+```plaintext
+This should be plaintext.
+I should make the minimum size of a code block larger or the button smaller.
+Wow this is pretty rough.
+```
+
 ## Details
 
 Use details callouts to hide a long explanation that may be useful but tangential.

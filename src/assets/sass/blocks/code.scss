@@ -5,6 +5,9 @@ pre {
   background: var(--color-dark);
   border-radius: var(--border-radius);
   color: var(--color-light);
+  button {
+    float: right;
+  }
 }
 
 pre[class*="language-"] {

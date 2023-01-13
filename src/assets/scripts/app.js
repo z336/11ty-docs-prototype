@@ -1,24 +1,3 @@
-// Append the table of contents heading to avoid mapping it to its own list
-
-// const tableOfContents = document.querySelector(".table-of-contents");
-
-// if (document.body.contains(tableOfContents)) {
-// tableOfContents.insertAdjacentHTML("afterbegin", "<h2>On this page</h2>");
-// }
-
-// Toggle details in left navbar to stay open for current page
-
-const currentPage = document.querySelector(`#sidebar details a[aria-current="page"]`);
-const currentPageMobile = document.querySelector(`.navbar details a[aria-current="page"]`);
-
-if (currentPage) {
-  currentPage.closest("details").setAttribute("open", "");
-}
-
-if (currentPageMobile) {
-  currentPageMobile.closest("details").setAttribute("open", "");
-}
-
 // Mobile nav menu
 
 const nav = document.querySelector(".navbar");
@@ -54,3 +33,49 @@ document.addEventListener("click", (event) => {
 });
 
 nav.insertBefore(burgerClone, list);
+
+// Toggle details in left navbar to stay open for current page
+
+const currentPage = document.querySelector(`#sidebar details a[aria-current="page"]`);
+const currentPageMobile = document.querySelector(`.navbar details a[aria-current="page"]`);
+
+if (currentPage) {
+  currentPage.closest("details").setAttribute("open", "");
+}
+
+if (currentPageMobile) {
+  currentPageMobile.closest("details").setAttribute("open", "");
+}
+
+// Add a copy button to code blocks
+
+const blocks = document.querySelectorAll("pre");
+
+blocks.forEach((block) => {
+  // Only add button if browser supports Clipboard API
+  if (navigator.clipboard) {
+    const button = document.createElement("button");
+
+    button.classList.add("copy");
+    button.innerText = "Copy";
+
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+      await copyCode(block);
+
+      button.innerText = "Copied";
+
+      setTimeout(() => {
+        button.innerText = "Copy";
+      }, 1500);
+    });
+  }
+});
+
+async function copyCode(block) {
+  const code = block.querySelector("code");
+  const text = code.innerText;
+
+  await navigator.clipboard.writeText(text);
+}

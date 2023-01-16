@@ -1,17 +1,20 @@
-code,
 pre {
   position: relative;
+  button {
+    position: absolute;
+    right: var(--gutter);
+    bottom: var(--gutter);
+  }
+}
+
+code,
+pre {
   padding: 0.125em 0.4em;
   font-family: var(--font-mono);
   background: var(--color-dark);
   border-radius: var(--border-radius);
   color: var(--color-light);
   overflow: auto;
-  button {
-    position: absolute;
-    right: var(--gutter);
-    bottom: var(--gutter);
-  }
 }
 
 pre[class*="language-"] {

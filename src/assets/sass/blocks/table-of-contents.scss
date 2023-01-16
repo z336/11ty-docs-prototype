@@ -22,8 +22,17 @@
       display: inline-block;
       font-size: var(--step-0);
     }
+  }
+}
+
+.table-of-contents {
+  @media (max-width: 80rem) {
     ol {
-      // list-style: none;
+      --flow-space: 0;
+    }
+  }
+  @media (min-width: 60rem) {
+    ol {
       padding-inline-start: var(--space-s);
       margin-block-start: 0;
       ol {

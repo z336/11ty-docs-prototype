@@ -7,14 +7,14 @@
   }
 }
 
-// make the flow space under headings and between multiple paragraphs
+// Make the flow space under headings and between multiple paragraphs
 .prose :is(h2, h3, h4) + *,
 p + p {
   --flow-space: var(--space-s-m);
 }
 
-// adjust for toc in fixed position
-.prose :is(.table-of-contents + p) {
+// Adjust for when toc in fixed position
+.prose :is(.table-of-contents-container + p) {
   @media (min-width: 80rem) {
     --flow-space: var(--space-s-m);
   }

@@ -57,6 +57,7 @@ blocks.forEach((block) => {
     const button = document.createElement("button");
 
     button.classList.add("copy");
+    button.setAttribute("aria-label", "Copy to clipboard");
     button.innerText = "Copy";
 
     block.appendChild(button);

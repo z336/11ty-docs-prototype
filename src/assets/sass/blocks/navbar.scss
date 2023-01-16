@@ -1,9 +1,10 @@
 .navbar {
-  // Set variables/desktop state
+  // Set desktop state
   @media (min-width: 60rem) {
     --details-list-display: none;
     --nav-button-display: none;
     --nav-position: static;
+
     ul {
       --nav-list-background: transparent;
       --nav-list-layout: row;
@@ -16,7 +17,44 @@
       --nav-list-shadow: none;
       --nav-list-transform: none;
       --nav-list-visibility: visible;
+      li {
+        --nav-list-item-padding: var(--space-m);
+      }
+      input {
+        --input-margin-inline-start: 0;
+        --input-margin-block-end: 0;
+      }
     }
+
+    a {
+      --nav-link-padding: 0;
+    }
+
+    a:is(:hover, :focus) {
+      text-underline-offset: 0.5rem;
+      text-decoration: underline var(--border-thin);
+    }
+
+    [aria-current="page"] {
+      --current-page-display: inline;
+      --current-page-padding: 0;
+      --current-page-border: none;
+      --current-page-background: none;
+      text-decoration: underline var(--border-thin);
+    }
+  }
+
+  a {
+    padding-inline-start: var(--nav-link-padding, calc(var(--space-m) + 0.2em));
+  }
+
+  [aria-current="page"] {
+    display: var(--current-page-display, block);
+    padding-inline-start: var(--current-page-padding, calc(var(--space-m) - var(--border-thin) + 0.2em));
+    border-inline-start: var(--current-page-border, solid var(--border-thin));
+    color: var(--color-dark);
+    background-color: var(--current-page-background, var(--color-grey-light));
+    text-underline-offset: 0.5rem;
   }
 
   details {
@@ -24,9 +62,10 @@
     ul {
       // Prevent details from open in new window within mobile nav
       all: unset;
-      padding-block: var(--space-3xs-2xs);
+      padding-block-start: var(--space-3xs-2xs);
     }
   }
+
   ul {
     display: flex;
     gap: var(--space-xs-s);
@@ -41,15 +80,19 @@
     overflow-y: auto;
     background-color: var(--nav-list-background, var(--color-light));
     li {
-      padding-inline-start: var(--space-m);
+      padding-inline-start: var(--nav-list-item-padding, 0);
+    }
+    input {
+      margin-inline-start: var(--input-margin-inline-start, var(--space-m));
+      margin-block-end: var(--input-margin-block-end, var(--space-m));
     }
   }
 
-  // Mobile but not expanded
   [aria-expanded="false"] + ul {
     transform: var(--nav-list-transform, translateX(100%));
     visibility: var(--nav-list-visibility, hidden);
   }
+
   .mobile-button {
     all: unset;
     display: var(--nav-button-display, flex);
@@ -59,9 +102,11 @@
     cursor: pointer;
     padding-right: var(--space-s-m);
   }
+
   span {
     padding-right: var(--space-2xs-xs);
   }
+
   svg {
     height: 100%;
     width: auto;
@@ -76,45 +121,6 @@
     [aria-expanded="true"] + ul,
     svg {
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), visibility 0.05s linear;
-    }
-  }
-
-  @media (min-width: 60rem) {
-    a:is(:hover, :focus) {
-      text-underline-offset: 0.5rem;
-      text-decoration: underline var(--border-thin);
-    }
-    [aria-current="page"] {
-      text-underline-offset: 0.5rem;
-      text-decoration: underline var(--border-thin);
-    }
-  }
-  @media (max-width: 60rem) {
-    ul {
-      li {
-        // compensate for all nav li padding
-        padding-inline-start: 0;
-        a {
-          padding-inline-start: calc(var(--space-m) + 0.2em);
-        }
-        a:is(:hover, :focus) {
-          display: block;
-          text-underline-offset: 0.5rem;
-          text-decoration: underline var(--border-thin);
-        }
-        input {
-          margin-inline-start: var(--space-m);
-          margin-block-end: var(--space-m);
-        }
-      }
-      [aria-current="page"] {
-        display: block;
-        padding-inline-start: calc(var(--space-m) - var(--border-thin) + 0.2em);
-        border-inline-start: solid var(--border-thin);
-        color: var(--color-dark);
-        background-color: var(--color-grey-light);
-        text-decoration: none;
-      }
     }
   }
 }

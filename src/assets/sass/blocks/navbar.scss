@@ -78,4 +78,43 @@
       transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), visibility 0.05s linear;
     }
   }
+
+  @media (min-width: 60rem) {
+    a:is(:hover, :focus) {
+      text-underline-offset: 0.5rem;
+      text-decoration: underline var(--border-thin);
+    }
+    [aria-current="page"] {
+      text-underline-offset: 0.5rem;
+      text-decoration: underline var(--border-thin);
+    }
+  }
+  @media (max-width: 60rem) {
+    ul {
+      li {
+        // compensate for all nav li padding
+        padding-inline-start: 0;
+        a {
+          padding-inline-start: calc(var(--space-m) + 0.2em);
+        }
+        a:is(:hover, :focus) {
+          display: block;
+          text-underline-offset: 0.5rem;
+          text-decoration: underline var(--border-thin);
+        }
+        input {
+          margin-inline-start: var(--space-m);
+          margin-block-end: var(--space-m);
+        }
+      }
+      [aria-current="page"] {
+        display: block;
+        padding-inline-start: calc(var(--space-m) - var(--border-thin) + 0.2em);
+        border-inline-start: solid var(--border-thin);
+        color: var(--color-dark);
+        background-color: var(--color-grey-light);
+        text-decoration: none;
+      }
+    }
+  }
 }

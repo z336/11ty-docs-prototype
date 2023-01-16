@@ -1,4 +1,4 @@
-.table-of-contents {
+.table-of-contents-container {
   @media (max-width: 80rem) {
     h2 {
       margin-block-end: var(--space-s-m);
@@ -21,11 +21,14 @@
     h2 {
       display: inline-block;
       font-size: var(--step-0);
-      font-weight: bold;
     }
     ol {
+      // list-style: none;
       padding-inline-start: var(--space-s);
       margin-block-start: 0;
+      ol {
+        padding-inline-start: var(--gutter);
+      }
       li {
         padding-block-start: var(--space-3xs);
       }
